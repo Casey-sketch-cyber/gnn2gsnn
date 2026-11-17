@@ -1,0 +1,13 @@
+﻿flowchart LR
+    subgraph L1["时间线一：转换技术"]
+        direction LR
+        c1["2015 Cao、Diehl：发放率对应 ReLU"] --> c2["2017 Rueckauer：减法复位，T 约 300–550"] --> c3["2021–2022 校准、QCFS：T 压到个位数，多要重训"] --> c4["2024–2025 ECMT、DCGS：免训练转换 ViT，T=2–4"] --> c5["空白：动态选邻居、有符号 max 聚合"]
+    end
+    subgraph L2["时间线二：脉冲图网络"]
+        direction LR
+        g1["2020–2022 触觉图、引文图：直接训练"] --> g2["2023–2024 大图、动态图：训练降本"] --> g3["2023–2026 点云、骨架：直接训练爆发"] --> g4["零星转换：Text GCN、PointNet++（改池化重训）"]
+    end
+    subgraph L3["时间线三：只算变化的部分"]
+        direction LR
+        d1["2017 Sigma-Delta、Delta 网络：只传变化量"] --> d2["2021–2023 DeltaCNN、EvNets、Eventful Transformers"] --> d3["2022–2026 AEGNN、DAGr、InkStream 等图上增量"] --> d4["空白：视觉图上逐层阈值化近似增量"]
+    end

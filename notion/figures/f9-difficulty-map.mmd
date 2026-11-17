@@ -1,0 +1,19 @@
+﻿flowchart TB
+    subgraph S["已有成熟解法"]
+        h1["低时间步误差大 —— QCFS、校准、DCGS"]
+        h2["负值 —— 带符号脉冲（DCGS、PMSM）"]
+        h3["固定图 + 线性聚合转换 —— One-Spike SNN（Text GCN）"]
+    end
+    subgraph P["部分解决，图上还有缺口"]
+        h4["注意力、归一化 —— Transformer 转换仍靠浮点补偿或长时间步"]
+        h5["max 聚合 —— CNN 办法要求非负、长时间步，不适用有符号差值"]
+        h6["流式输入的时间冗余 —— 图上已有精确增量，缺逐层阈值化"]
+        h7["硬件 —— 事件图芯片已有，跑的是量化网络"]
+    end
+    subgraph E["没找到解法"]
+        h8["动态选邻居：误差使第 k 与第 k+1 近互换"]
+        h9["图网络与量化网络的公平能耗对比"]
+    end
+    style S fill:#e8f5e9,stroke:#4caf50
+    style P fill:#fff8e1,stroke:#f0ad4e
+    style E fill:#fdecea,stroke:#d9534f
