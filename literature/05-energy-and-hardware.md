@@ -46,17 +46,17 @@
 
 ### ETHEREAL（2026）
 
-- 标题：ETHEREAL: An Event-Driven Graph Neural Network Accelerator for Edge Vision
+- 标题：ETHEREAL: A 25.6-µs/inf. Low-latency Event-driven Graph-neural-network Processor for High-resolution Vision at the Edge（长文版 `arXiv:2608.17787v1` 第 1 页标题）；另有 5 页短文版 `arXiv:2609.15241v1`，标题为 “A 25-µs/inf Event-driven Graph Neural Network Processor with Spatiotemporal Caching and Spline Convolution for Ultra-low-latency AI at the Edge”
 - 作者：Adrian Kneip, Martin Lefebvre, Daniel Gehrig, Victoria Catalán Pastor, Davide Scaramuzza, Marian Verhelst, Charlotte Frenkel
-- 发表处：IEEE European Solid-State Electronics Research Conference（ESSERC）2026（扩展期刊版已投 IEEE Journal of Solid-State Circuits，预印本 `arXiv:2608.17787v1`）
-- 链接：https://arxiv.org/abs/2608.17787 ；代码：未公开
+- 发表处：arXiv（两份预印本：`2608.17787v1`，2026-08-18，14 页；`2609.15241v1`，2026-09-14，5 页）。**冲突说明**：Claude 草稿写作 “ESSERC 2026”，但两份 PDF 全文都没有出现 ESSERC 或其他录用信息（长文版参考文献里的 ESSERC 2026 指的是另一篇 HeMAiA 论文），因此会议归属记为“未核实”。（核对人 2026-11-16 复查时更正了本条早先写错的标题与发表处）
+- 链接：https://arxiv.org/abs/2608.17787 ；https://arxiv.org/abs/2609.15241 ；代码：未公开
 - 核对深度：全文
 - 一句话：流片实现了首颗面向事件相机视觉的专用图神经网络 ASIC 芯片（28nm CMOS），用纯片上混合 3D/2D SRAM 和 4b/8b 量化图卷积实现每事件约 25.6 微秒的实时目标检测与分类。
 - 解决的难点：解决了事件相机动态时空图在边缘芯片上建图指针访存不规则、片外 DRAM 功耗高、深层图卷积特征存储爆炸三大硬件瓶颈——通过“前浅层 3D 时空缓存异步逐事件更新 + 后深层体素池化转 2D 暂存器同步复用”的混合架构，将全部 1.25 MB 存储塞进 3.7 mm² 芯片内。
 - 留下的局限：（1）**芯片运行的不是脉冲神经网络（SNN）**，而是带 4-bit/8-bit 整数量化激活（QReLU）与 B 样条边权（SplineConv）的量化事件图网络，节点间传递的是多位量化特征向量而非脉冲；（2）部署前必须做量化感知训练（QAT），不能免训练直接部署预训练浮点模型；（3）为了硬件确定性，将原版 DAGr 的双向多跳更新简化为有向单跳或受限双向图，纯 GNN 模式在复杂检测上精度偏低，仍需搭配帧图像 CNN 分支。
 - 是否需要训练或微调：是（需对 4b/8b 混合精度 DAGr-GNN 进行量化感知训练 QAT，见 Section VI-A）
 - 涉及的算子：半径邻域时空建图（Directed / Bidirectional FIFO 3D Grid）、SplineConv（一阶 B-spline 边特征加权卷积）、`max` 邻域聚合、体素网格 `max` 池化（VoxelPool）、量化 ReLU（QReLU）、层融合批归一化
-- 关键数字：TSMC 28nm CMOS 流片，芯片面积 `3.7 mm²`，片上总 SRAM `1.25 MB`（`512 kB` 权重 + `144 kB` 3D 时空缓存 + `584 kB` 2D 暂存器，Section IV-V, pp. 5–9）；含 8 个邻居并行消息传递核，支持 4b/8b 权重与激活；在 VGA 分辨率（`640×480`）DSEC 目标检测基准上（8b/8b 首层 + 4b/4b 主干），流水线推理延迟 **`25.6 µs/event`**（顺序执行 `46.1 µs`；不同位宽配置下 `20.1–40.1 µs`），`0.95V / 220MHz` 下平均功耗 `65.2 mW`、单事件能耗 **`1.6 µJ/event`**（跨配置 `1.2–2.5 µJ`；低压 `0.6V` 模式下最低 **`0.54 µJ/event`**、功耗 `10.6 mW`），检测精度 `30.3 mAP50`（GNN+CNN 融合）/ `7.6 mAP50`（纯有向 GNN）；在 N-CARS 分类上精度 **`86.7%`**（Section VI, Fig. 18–21 & Table I, pp. 10–13）。
+- 关键数字：TSMC 28nm CMOS 流片，芯片面积 `3.7 mm²`，片上总 SRAM `1.25 MB`（`512 kB` 权重 + `144 kB` 3D 时空缓存 + `584 kB` 2D 暂存器，Section IV-V, pp. 5–9）；含 8 个邻居并行消息传递核，支持 4b/8b 权重与激活；在 VGA 分辨率（`640×480`）DSEC 目标检测基准上（8b/8b 首层 + 4b/4b 主干），流水线推理延迟 **`25.6 µs/event`**（顺序执行 `46.1 µs`；不同位宽配置下 `20.1–40.1 µs`），`0.95V / 220MHz` 下平均功耗 `65.2 mW`、单事件能耗 **`1.6 µJ/event`**（跨配置 `1.2–2.5 µJ`；低压 `0.6V` 模式下最低 **`0.54 µJ/event`**、功耗 `10.6 mW`），检测精度 `30.3 mAP50`（GNN+CNN 融合）/ `7.6 mAP50`（纯有向 GNN）；在 N-CARS 分类上精度 **`86.7%`**（Section VI, Fig. 18–21 & Table I, pp. 10–13）。**版本间数字冲突**：长文版摘要写单事件能耗 `1.6 µJ`，5 页短文版摘要写 `25.6 µs` 与 `1.7 µJ`、并称“比已有工作改善 10–1000 倍”（`arXiv:2609.15241` 第 1 页摘要），两者都记录，不作取舍。
 - 与本方向的关系：直接相关（证明事件驱动视觉图网络已有真实流片需求，同时坐实当前专用芯片跑的是 4b/8b 量化 GNN 而非脉冲 GNN）
 - 核对人与日期：Gemini，2026-11-16
 
@@ -391,7 +391,7 @@
 3. **第三阶段（2025–2026）：双Twin 严格盈亏理论、秒级免训练 GNN PTQ 与事件图芯片流片交汇**。到 2025–2026 年，三条线同时走到新高度：
    - 在**能耗理论**上，Yan 等（TCAD 2026）建立了 $T$ 步 SNN 与 $\lceil\log_2(T+1)\rceil$ 比特 QNN Twin 的严格解析与轨迹对决（$T=5$ 时发放率需 `< 5.7%`），但**图神经网络上的对应分析仍是空白**；
    - 在**非脉冲图基线**上，TopGQ（DAC 2026）首次在固定图上实现了秒级免训练 W8A8/W4A4 PTQ，EvGNN（TCASAI 2025）也证实 PointNetConv + `max` 聚合做 INT8 PTQ 仅掉点 `0.1%`，这意味着我们的脉冲图转换不仅要和朴素均匀量化比，还要直面强 PTQ 基线；
-   - 在**专用芯片**上，EvGNN（2025）、AMPLE（2025）、EFGCN（2026）、EDA-GNN（2026）乃至首颗 28nm 流片 ASIC **ETHEREAL（ESSERC 2026，`25.6 µs/ev`, `1.6 µJ/ev`）**密集问世，证明边缘端对事件驱动视觉图推理有极迫切的硅片级需求，但它们清一色跑的是**需 QAT 训练的 4b/8b 量化 GNN**，尚未结合免训练差分/分级脉冲机制来消除帧间与层间细粒度冗余。
+   - 在**专用芯片**上，EvGNN（2025）、AMPLE（2025）、EFGCN（2026）、EDA-GNN（2026）乃至首颗 28nm 流片 ASIC **ETHEREAL（2026 arXiv 预印本，会议归属未核实；`25.6 µs/ev`，`1.6 µJ/ev` 或短文版的 `1.7 µJ/ev`）**密集问世，证明边缘端对事件驱动视觉图推理有极迫切的硅片级需求，但它们清一色跑的是**需 QAT 训练的 4b/8b 量化 GNN**，尚未结合免训练差分/分级脉冲机制来消除帧间与层间细粒度冗余。
 
 **对本项目的三条直接启示**：
 1. **静态图不硬吹省电，流式图主攻帧间差分**：完全印证实验协议中的假设 H3——静态图像图（ViG / DGCNN 单帧）上很难赢过 INT4/INT8 PTQ，能耗叙事应诚实做成**图结构上的 QNN-SNN 盈亏边界刻画**（显式纳入节点度分布、不规则邻接表访存与动态建图成本），把真正的绝对省电主战场放在**骨架序列、点云流与事件相机图的时间差分事件化**上。

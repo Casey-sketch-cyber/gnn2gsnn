@@ -18,7 +18,7 @@
 
 ### MBE 脉冲浮点转换（2026）
 
-- 标题：Towards Accurate Training-Free ANN-to-SNN Conversion for Deep Models with Complex Nonlinear Operations
+- 标题：Training-Free ANN-to-SNN Conversion for High-Performance Spiking Transformers（PDF 第 1 页与 arXiv API；本条早先误写为另一标题，复查时已更正）
 - 作者：Jingya Wang, Xin Deng, Wenjie Wei, Dehao Zhang, Shuai Wang, Qian Sun, Jieyuan Zhang, Hanwen Liu, Ning Xie, Malu Zhang
 - 发表处：Proceedings of the AAAI Conference on Artificial Intelligence（AAAI 2026；预印本 `arXiv:2508.07710`）
 - 链接：https://arxiv.org/abs/2508.07710 ；代码：未公开
@@ -50,7 +50,7 @@
 
 ### DCGS（2025）
 
-- 标题：Towards Lossless Ultimate-Low Latency Spiking Neural Networks from ANN-to-SNN Conversion
+- 标题：Differential Coding for Training-Free ANN-to-SNN Conversion（`arXiv:2503.00301v3` 与 PDF 第 1 页；本条早先误写为另一标题，复查时已更正）
 - 作者：Zihan Huang, Wei Fang, Tong Bu, Peng Xue, Zecheng Hao, Wenxuan Liu, Yuanhong Tang, Zhaofei Yu, Tiejun Huang
 - 发表处：Proceedings of the 42nd International Conference on Machine Learning（ICML 2025，PMLR Vol. 267，pp. 25235–25264；预印本 `arXiv:2503.00301`）
 - 链接：https://arxiv.org/abs/2503.00301 （OpenReview：https://openreview.net/forum?id=vB8cBscR6o ）；代码：https://github.com/h-z-h-cell/ANN-to-SNN-DCGS
@@ -66,7 +66,7 @@
 
 ### Parallel Conversion（2025）
 
-- 标题：Towards Ultra-Fast Conversion-Based Spiking Neural Networks via Parallelized Spiking Neurons
+- 标题：Faster and Stronger: When ANN-SNN Conversion Meets Parallel Spiking Calculation（PDF 第 1 页与 arXiv API；本条早先误写为另一标题，复查时已更正）
 - 作者：Zecheng Hao, Qichao Ma, Kang Chen, Yi Zhang, Zhaofei Yu, Tiejun Huang
 - 发表处：Proceedings of the 42nd International Conference on Machine Learning（ICML 2025，PMLR Vol. 267；预印本 `arXiv:2412.13610`）
 - 链接：https://arxiv.org/abs/2412.13610 ；代码：https://github.com/hzc1208/Parallel_Conversion
@@ -258,7 +258,7 @@
 
 ### SpiCalib 与 MLIPooling（2022）
 
-- 标题：Converting Artificial Neural Networks to Spiking Neural Networks via Parameter Calibration（注：预印本正文标题及算法名常简称 `SpiCalib`）
+- 标题：Spike Calibration: Fast and Accurate Conversion of Spiking Neural Network for Object Detection and Segmentation（PDF 第 1 页与 arXiv API；本条早先误写成另一篇论文的标题，复查时已更正；方法简称 SpiCalib）
 - 作者：Yang Li, Xiang He, Yiting Dong, Qingqun Kong, Yi Zeng
 - 发表处：arXiv（2022 年 7 月预印本，`arXiv:2207.02702`）
 - 链接：https://arxiv.org/abs/2207.02702 ；代码：未公开

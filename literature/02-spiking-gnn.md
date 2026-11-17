@@ -14,7 +14,7 @@
 | **视觉图与事件图：从头直接训练（含蒸馏）** | `AMP2`（2026）、`MK-SGN`（2026，含 CTR-GCN 蒸馏）、`Signal-SGN++`（2025）、`Signal-SGN`（2025）、`Spiking Point Mamba`（2025）、`Spiking Point Transformer`（2025）、`NI-SGCN`（2025，脉冲动态 EdgeConv）、`E-3DSNN`（2025）、`SpikePoint`（2024）、`P2SResLNet`（2024，含 KPConv-SNN 转换基线）、`Spiking PointNet`（2023）、`SpikingGCN`（2022，含 MNIST 超像素图）、`TactileSGNet`（2020） | 骨架动作识别、3D 点云分类/检测/分割/去噪、图像超像素与 $k$-NN 特征图、事件相机与触觉图 | **是**（全部从头训练；仅 `MK-SGN` 引入预训练 CTR-GCN 做知识蒸馏教师） |
 | **通用静态/动态图与评测基准：从头直接训练** | `SpikeGraphormer`（2026，含 Mini-ImageNet $k$-NN 图像图）、`GT-SNT`（2026）、`SGNNBench`（2025，评测基准）、`MSG`（2024）、`Loihi Transductive SGNN`（2024）、`SpikeGCL`（2024）、`Dy-SIGN`（2024）、`DRSGNN`（2024）、`SpikeNet`（2023）、`GC-SNN 与 GA-SNN`（2021） | 引文/共购/异配静态图、大规模时序动态图、图对比学习、图 Transformer 分词 | **是**（`SGNNBench` 评测的 9 种 SGNN 全部为从头直接训练，未收录任何转换法） |
 
-> **关于综述文献的核查说明**：截至 2026-11-16，经 `arXiv API` 与 `Crossref REST API` 专项检索（见 `search_log_2.md` 条目 `SL-30`），学术界**尚未发表专门针对“脉冲图神经网络（Spiking GNN）”的独立综述论文**；目前承担系统性梳理与横向对比职能的核心文献为 NeurIPS 2025 数据集与基准轨道论文 `SGNNBench`。
+> **关于综述文献的核查说明**：截至 2026-11-16，经 `arXiv API` 与 `Crossref REST API` 专项检索（见 [search-log.md](search-log.md) 条目 `SL-30`），学术界**尚未发表专门针对“脉冲图神经网络（Spiking GNN）”的独立综述论文**；目前承担系统性梳理与横向对比职能的核心文献为 NeurIPS 2025 数据集与基准轨道论文 `SGNNBench`。
 
 ---
 
@@ -310,7 +310,7 @@
 
 ### SpikeGCL（2024）
 
-- 标题：Aajas / Graph Contrastive Learning Meets Spiking Neural Networks（正式发表标题：*Spiking Graph Contrastive Learning* / `iclr2024_conference.tex` 标题 *Graph Contrastive Learning Meets Spiking Neural Networks*，简称 `SpikeGCL`）
+- 标题：A Graph is Worth 1-bit Spikes: When Graph Contrastive Learning Meets Spiking Neural Networks（arXiv API 返回的标题；简称 SpikeGCL。本条早先标题字段有乱码，复查时已更正）
 - 作者：Jintang Li, Huizhe Zhang, Ruofan Wu, Zulun Zhu, Baokun Wang, Changhua Meng, Zibin Zheng, Liang Chen
 - 发表处：International Conference on Learning Representations（ICLR 2024；预印本于 2023 年 5 月发布于 `arXiv:2305.19306`）
 - 链接：https://arxiv.org/abs/2305.19306 ；代码：https://github.com/EdisonLeeeee/SpikeGCL
