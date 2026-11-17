@@ -169,6 +169,7 @@
 - 标题：Quantization Meets Spikes: Nearly Lossless Conversion at the First Timestep via Polarity Multi-Spike Mapping
 - 作者：Hangming Zhang, Zheng Li, Chenxiang Ma, Huajin Tang, Long Cheng, Kay Chen Tan, Qiang Yu
 - 发表处：arXiv（2025 年 8 月预印本，`arXiv:2508.14520`）
+- 版本说明（Claude 审查时补充，2026-11-17）：arXiv 首版（v1）标题为 *Quantization Meets Spikes: Lossless Conversion in the First Timestep via Polarity Multi-Spike Mapping*，作者为 Hangming Zhang、Zheng Li、Qiang Yu 三人，摘要只提 CIFAR 与 ImageNet。本条目的标题、七位作者和 GCN 触觉图实验对应的是后续版本；审查时 arXiv 限流，未能独立打开后续版本确认 GCN 实验，引用前请写明版本号并复核。
 - 链接：https://arxiv.org/abs/2508.14520 ；代码：未公开
 - 核对深度：全文
 - 一句话：通过极性量化激活函数（PQA）训练源网络，建立量化整数激活与带正负极性多脉冲增广积分发放神经元（AIF）之间的精确双射映射，实现**第一个时间步（$T=1$）零精度损失转换**，并在 **3 层图卷积网络（GCN）事件触觉图分类**上完成实验验证。
@@ -251,7 +252,7 @@
 - 发表处：IEEE Transactions on Emerging Topics in Computing（IEEE TETC，2025 年 1–3 月刊，Vol. 13, No. 1, pp. 162–172，DOI: `10.1109/TETC.2024.3386893`；预印本 `arXiv:2403.08786`）
 - 链接：https://doi.org/10.1109/TETC.2024.3386893 （预印本：https://arxiv.org/abs/2403.08786 ）；代码：未公开
 - 核对深度：全文
-- 一句话：**目前文献中唯一明确对预训练 ReLU 图卷积网络（Text GCN）实施真正免训练 ANN→SNN 权重转换的工作**——将每层 GCN 拆解为“特征线性变换”与“邻接矩阵乘”两个级联脉冲层，并用基数可调（$Q=1.3$）的单脉冲相位编码将 5 个文本图数据集的平均转换精度损失压至 0.90%。
+- 一句话：**本次检索范围内找到的唯一一篇对预训练 ReLU 图卷积网络（Text GCN）做免训练 ANN→SNN 权重转换的工作**——将每层 GCN 拆解为“特征线性变换”与“邻接矩阵乘”两个级联脉冲层，并用基数可调（$Q=1.3$）的单脉冲相位编码将 5 个文本图数据集的平均转换精度损失压至 0.90%。
 - 解决的难点：证明了在固定邻接矩阵、线性求和聚合的 ReLU GCN 上，无需重训源模型即可通过“双矩阵乘法拆层 + 阈值中点平移 + 小基数单脉冲相位编码”在 $T=16$ 内完成高精度低功耗转换。
 - 留下的局限：① 仅适用于**静态固定拓扑 + 线性矩阵乘聚合（$\tilde{A}XW$）+ 纯 ReLU 激活**的浅层（2 层拆为 4 层）非视觉文本图（Text GCN），完全未涉及视觉图骨干中的动态 $k$-NN 选邻居、`max` 聚合、GELU/SiLU 或归一化算子；② 层间存在因残余电位引发的伪脉冲（noise spikes），需在层与层之间插入等待步 $w$ 抑制误差传播（Section V-C2）。
 - 是否需要训练或微调：**否**（真正免训练转换：仅在训练集上统计最大激活值做通道/层归一化，直接复制预训练 Text GCN 权重）
