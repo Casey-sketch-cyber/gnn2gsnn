@@ -4,9 +4,9 @@
 
 ## 1. 批量下载论文 PDF：`fetch_papers.py`
 
-读取 [`../literature/papers.csv`](../literature/papers.csv)，把所有带有公开官方 PDF 地址（arXiv、CVF Open Access、OpenReview、PMLR、JMLR、VLDB、AAAI、NeurIPS、Frontiers 等）的论文自动下载到仓库根目录下的 `papers/` 文件夹，按 `<年份>-<短名>.pdf` 命名。
+读取 [`../literature/papers.csv`](../literature/papers.csv)（含 `短名,年份,论文页,PDF,许可证,精读层级,存放位置` 七列），把所有带有公开官方 PDF 地址（arXiv、CVF Open Access、OpenReview、PMLR、JMLR、VLDB、AAAI、NeurIPS、Frontiers 等）的论文自动下载到仓库根目录下的 `papers/` 文件夹，按 `<年份>-<短名>.pdf` 命名。
 
-> **注意**：`papers/` 与 `*.pdf` 已写入根目录 `.gitignore`，下载的 PDF 仅保存在本机或上传至不公开分享的私人 Notion 页面，**绝不提交进 Git 仓库**。
+> **注意**：`papers/` 与 `*.pdf` 已写入根目录 `.gitignore`，下载的 PDF 仅保存在本机、上传至不公开分享的私人 Notion 页面（`≤ 5 MiB` 共 86 篇）或存入项目所有者受限私有的 Google 云端硬盘 `gnn2gsnn-papers/原文/` 并嵌入 Notion（`> 5 MiB` 共 17 篇），**绝不提交进 Git 仓库**。
 
 ### 运行方式
 
