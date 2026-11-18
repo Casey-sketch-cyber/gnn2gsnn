@@ -3,12 +3,12 @@
 > 每个 AI 结束工作前在最上方追加一条记录，新的在上面。
 
 ## 当前状态
-任务 01、02 已完成并合并（PR #1、#2）。任务 04（推导主线、配套代码、论文链接与中文精读）可以开始，分六批交付。文献树 v1 的若干判断已被任务 01 推翻，待任务 03 修订为 v2。
+任务 01、02 已完成并合并（PR #1、#2）。任务 04 第 1 批（`gemini/deep-01`：第 1～4 章推导与配套 Notebook、符号表初版、新增 3 篇背景文献、全部 118 篇论文 C1/C2/C3 升级与 Notion 内嵌 PDF）已完成，待 Claude 审查合并后开始第 2 批。文献树 v1 的若干判断已被任务 01 推翻，待任务 03 修订为 v2。
 
 ## 待办
 - [x] 任务 01：文献收集与核查（Gemini，PR #1 已合并）
 - [x] 任务 02：Notion 通俗讲解（Gemini，PR #2 已合并）
-- [ ] 任务 04：从第一性原理讲透，并配齐论文与中文精读（Gemini，分六批）
+- [ ] 任务 04：从第一性原理讲透，并配齐论文与中文精读（Gemini，分六批；**第 1 批 `gemini/deep-01` 已完成待审**，第 2～6 批待后续逐批推进）
 - [ ] 任务 03：Claude 审查并把文献树修订为 v2
 
 ## 已知问题
@@ -18,6 +18,20 @@
 ---
 
 ## 工作记录
+
+### 2026-11-18 · gemini · gemini/deep-01（任务 04 第 1 批）
+- **完成**：按 `tasks/04-deep-curriculum.md` 第 1 批范围完成线上 Notion 与仓库全部交付物：
+  - **新增 3 篇 A 层背景文献（C5）**：下载并通读核对 `Kipf & Welling GCN (ICLR 2017)`、`Gilmer et al. MPNN (ICML 2017)`、`Neftci et al. Surrogate Gradient (IEEE SPM 2019)` 全文 PDF，按任务 01 的 13 字段固定格式补入 `literature/02-spiking-gnn.md` 与 `literature/03-vision-graph-backbones.md`，并同步写入 Notion `文献库`（总条目由 115 篇增至 **118 篇**）。
+  - **数学主线第 1～4 章（A）与符号表初版（D.2）**：严格遵循 11 节固定结构与原文公式逐字符核对规范，在 Notion 总页面下上线《符号表（全课程统一记号）》（含第 1～13 章统一记号与 6 篇核心论文符号对照表）及《第 1 章 线性代数最小集》《第 2 章 神经网络的前向计算》（含 1D 卷积稀疏 Toeplitz 矩阵与 BatchNorm 推理期无损折叠 $\tilde{W},\tilde{\mathbf{b}}$ 推导）《第 3 章 训练：反向传播与脉冲困境》（含两层 ReLU 反向传播手算与 Heaviside 阶跃零导数死锁推导）《第 4 章 图与图神经网络》（含 Kipf-Welling 对称归一化 $\hat{A}=\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}$ 逐元素推导、验收标准第 1 条的 3 节点 2 维特征 $2\times 2$ 权重手算，以及 4 节点猫图块 GCN 与 Sum/Mean/Max 对比手算），并实时回拉导出到 `notion/export/符号表.md` 与 `notion/export/derivations/ch01`～`ch04`。
+  - **配套可运行代码（B）**：仅使用 Python 3.10+、`numpy`、`matplotlib` 编写并完整执行保存输出 `notion/notebooks/ch01`～`ch04` 共 4 个 `.ipynb` 与 `notion/notebooks/README.md`，每个手算例子均经 `assert np.allclose` 校验一致，顶部附 Colab 一键运行链接。
+  - **论文清单、下载脚本、许可证与 Notion 论文页全面改造（C1 + C2 + C3）**：
+    - 新建 `literature/papers.csv`（118 篇，核实许可证与 A/B/C 分层：A 层 23 篇、B 层 35 篇、C 层 60 篇）及 `scripts/fetch_papers.py`、`scripts/README.md`，本机 `papers/` 自动下载 103 篇公开 PDF（已由 `.gitignore` 忽略，零 PDF 入库）。
+    - Notion `文献库` 新增 `论文页`、`PDF`、`许可证`、`精读层级`、`中文全文`、`精读` 六列；为全部 118 篇论文创建带 C0 版权声明头的「中文全文」子页面；将全部 **86 篇 `≤ 5 MiB`** 的公开 PDF 上传并嵌入对应论文页顶部，17 篇超过 Notion 单文件 `5 MiB` 上限的公开 PDF 保留官方直链并在 PR #3 中完整列出；将已有通俗页 `00`～`09` 及新章节全部论文提及统一升级为 `短名（年份）[原文] [中文] [代码]`，并重新实时导出全部 18 个页面快照至 `notion/export/`。
+- **未完成**：待提交 PR #3 由 Claude 审查合并后，再依次推进第 2～6 批（`gemini/deep-02`～`06`）。
+- **注意 / 坑**：
+  - Notion 当前工作区单文件上传硬上限为 **5 MiB**（实测上传 6.295 MiB 的 `ViG` PDF 返回 HTTP 400），故 17 篇 `> 5 MiB` 的论文按任务说明保留官方 PDF 直链并在 PR 说明中逐篇列出。
+  - OpenReview 对脚本 `urllib` 请求启用了 Cloudflare 403 拦截（影响 `STA`、`Adaptive Fission`、`GraphPTQ` 三篇；其中 `Sigma-Delta` 已改用其官方 `arXiv:1611.02024` 预印本成功下载），AAAI OJS（`DRSGNN`、`P2SResLNet`）启用了 Anubis 反机器人验证网关，按安全准则不绕过反爬，保留官方链接供浏览器直接点击打开。
+  - Notion CommonMark 解析器遇到紧贴中文引号的 `**“...”**` 时会把星号转义成字面量 `\*\*`，在中文引号外加粗时改用原生 `<b>“...”</b>` 即可避免。
 
 ### 2026-11-18 · claude · main（审查 PR #2，新增任务 04）
 - **完成**：审查并合并 PR #2；新增 `tasks/04-deep-curriculum.md`；`.gitignore` 加入 `papers/`。

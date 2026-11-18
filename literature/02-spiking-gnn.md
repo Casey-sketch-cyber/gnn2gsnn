@@ -485,6 +485,22 @@
 - 与本方向的关系：背景（异步物理事件传感器 + 脉冲图网络的先驱工作，也是 2025 年 `PMSM` 做 GCN→SNN $T=1$ 转换实验所采用的标准基准来源）
 - 核对人与日期：Gemini，2026-11-16
 
+### Surrogate Gradient 综述（2019）
+
+- 标题：Surrogate Gradient Learning in Spiking Neural Networks: Bringing the Power of Gradient-Based Optimization to Spiking Neural Networks（arXiv 版短标题为 *Surrogate Gradient Learning in Spiking Neural Networks*）
+- 作者：Emre O. Neftci, Hesham Mostafa, Friedemann Zenke（三位作者同等贡献）
+- 发表处：IEEE Signal Processing Magazine（2019 年 11 月，Vol. 36, No. 6，pp. 51–63，DOI: `10.1109/MSP.2019.2931595`；预印本 `arXiv:1901.09948`）
+- 链接：https://arxiv.org/abs/1901.09948 （期刊页：https://doi.org/10.1109/MSP.2019.2931595 ）；代码：https://github.com/fzenke/spytorch
+- 核对深度：全文（arXiv v2 全文 25 页核对）
+- 一句话：系统把离散时间 LIF 脉冲神经网络统一表述为带二值阶跃非线性 $\Theta(U-\vartheta)$ 的循环神经网络（RNN），阐明阶跃导数几乎处处为零阻断信用分配的机理，并确立“前向保留硬脉冲阶跃、反向传播替换为平滑替代导数（Surrogate Derivative）”的现代直接训练标准范式。
+- 解决的难点：打通了脉冲神经网络与现代自动微分框架的接口，厘清了空间信用分配与时间信用分配（反向展开 BPTT 的 $O(NT)$ 空间复杂度 vs 前向传播敏感度的 $O(N^3)$ 及其局部近似）的计算代价边界。
+- 留下的局限：明确指出基于时间展开 BPTT 的替代梯度直接训练每层需保存全部时间步状态，显存复杂度达 $O(NT)$（Section III-B & IV，第 8–9 页），在大规模深层视觉模型与大图上极易受限于 GPU 显存与训练耗时——这也正是“免训练直接转换预训练模型”路线的核心现实动因。
+- 是否需要训练或微调：是（本文即直接训练脉冲网络的方法学奠基综述）
+- 涉及的算子：离散时间突触电流衰减与 LIF 膜电位减法复位（Eq. 4–5）、Heaviside 阶跃发放 $\Theta(U-\vartheta)$、分段线性 / 快速 Sigmoid（SuperSpike）/ 指数（SLAYER）替代导数（Fig. 3）、时间展开反向传播（BPTT，Eq. 7）
+- 关键数字：理论复杂度对比（Section III-B，第 8 页）：精确时间反向传播（BPTT）每层显存复杂度为 **$O(NT)$**（$N$ 为每层神经元数，$T$ 为时间步数）；精确前向梯度传播显存复杂度为 **$O(N^3)$**，经局部性与图简化后可降至 **$O(N^2)$**（如 e-prop / SuperSpike）乃至 **$O(N)$**。
+- 与本方向的关系：背景（理解“为什么脉冲阶跃不可导导致直接训练既贵又占显存，从而需要免训练 ANN→SNN 转换”以及本脉络所有直接训练脉冲图网络所用替代梯度方法的理论基石，任务 04 新增背景条目）
+- 核对人与日期：Gemini，2026-11-18
+
 ---
 
 ## 这条线是怎么演化的

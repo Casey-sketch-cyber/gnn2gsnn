@@ -1,6 +1,6 @@
 # 🐱 视觉图网络免训练转脉冲网络：通俗讲解
 
-> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-17T16:21:48.297Z`）
+> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-18T10:38:37.651Z`）
 
 <callout icon="📌" color="blue_bg">
 这份讲解写给项目所有者：用一张猫的照片贯穿全篇，说明“把训练好的视觉图神经网络，不重新训练就变成省电的脉冲网络”这个方向在做什么、别人做到了哪一步、还空着什么。所有事实都来自仓库 <code>literature/</code> 下已核实的条目（任务 01，PR #1 已合并）。
@@ -91,3 +91,29 @@
 
 - 页面里的绿、黄、灰三种标注块分别代表什么？
 - 如果你想查某条事实的原始论文出处，应该点哪里？
+
+---
+
+## 从零推导：第一性原理数学主线（任务 04 扩展，分批更新中）
+
+上面 <code>0</code>～<code>11</code> 页是面向快速建立全局视野的通俗讲解；下面新增<b>“从零推导”数学主线</b>（共 13 章，第 1 批上线《符号表》与《第 1～4 章》），一步不跳地写出矩阵形状、公式推导、小数字手算与可运行 Notebook 验证（配套代码见仓库 [<code>notion/notebooks/</code>](https://github.com/Casey-sketch-cyber/gnn2gsnn/tree/main/notion/notebooks)）；同时所有论文引用均已补齐 <code>[原文] [中文] [代码]</code> 一键直达链接，文献库内可直接翻阅原文 PDF。
+
+<page url="https://app.notion.com/p/41c0e3342e6f81b58fb2e4fd6fdbc8c7">
+符号表（全课程统一记号）
+</page>
+
+<page url="https://app.notion.com/p/41c0e3342e6f8102aeb4d13255acb166">
+第 1 章 线性代数最小集
+</page>
+
+<page url="https://app.notion.com/p/41c0e3342e6f8156afa8d6260fe476ce">
+第 2 章 神经网络的前向计算
+</page>
+
+<page url="https://app.notion.com/p/41c0e3342e6f816db904cb868ade3e5c">
+第 3 章 训练：反向传播与脉冲困境
+</page>
+
+<page url="https://app.notion.com/p/41c0e3342e6f8167aff7f5ea10295347">
+第 4 章 图与图神经网络
+</page>
