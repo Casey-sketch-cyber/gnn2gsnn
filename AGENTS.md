@@ -39,4 +39,4 @@
 
 ## 当前注意事项
 - 任务 04 分六批交付，每批合并后再开始下一批。
-- 论文 PDF 和中文全文译文只供项目所有者个人学习。提交译文前必须确认仓库为私有（`gh api repos/Casey-sketch-cyber/gnn2gsnn --jq .private` 输出 `true`），否则停下来告诉他。PDF 不进 git。详见 `tasks/04-deep-curriculum.md` 的 C0 和 `docs/DECISIONS.md`。
+- 论文 PDF 和中文全文只放在 Notion（不公开分享），不提交到本仓库；仓库只放论文清单、脚本和译文校对记录。详见 `tasks/04-deep-curriculum.md` 的 C0。
