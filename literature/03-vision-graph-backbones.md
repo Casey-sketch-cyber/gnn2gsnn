@@ -388,6 +388,38 @@
 - 与本方向的关系：直接相关（作为 `MNIST`/`CIFAR10` 超像素图上表现最佳的各向异性边门控教师架构，代表了除 `Max` 与 `Softmax` 之外第三类关键非线性图聚合——`Sigmoid` 边门控）
 - 核对人与日期：Gemini，2026-11-16
 
+### GCN 奠基（2017）
+
+- 标题：Semi-Supervised Classification with Graph Convolutional Networks
+- 作者：Thomas N. Kipf, Max Welling
+- 发表处：5th International Conference on Learning Representations（ICLR 2017，OpenReview ID: `SJU4ayYgl`；预印本 `arXiv:1609.02907`）
+- 链接：https://arxiv.org/abs/1609.02907 （OpenReview：https://openreview.net/forum?id=SJU4ayYgl ）；代码：https://github.com/tkipf/gcn
+- 核对深度：全文（arXiv v4 正式版全文 14 页及官方仓库 `MIT` 许可证核对）
+- 一句话：对谱图卷积做一阶切比雪夫多项式截断并引入加自环对称重归一化技巧 $I_N + D^{-1/2}AD^{-1/2} \to \tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}$，导出复杂度与边数成正比的逐层矩阵传播公式 $H^{(l+1)}=\sigma(\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}H^{(l)}W^{(l)})$，奠定现代空间/谱图卷积网络的标准基石。
+- 解决的难点：免去了早期谱图卷积 $O(N^2)$ 的拉普拉斯特征分解开销，并用重归一化技巧把算子特征值从 $[0,2]$ 压回稳定区间以消除多层堆叠时的数值爆炸。
+- 留下的局限：图邻接矩阵固定且采用各向同性的对称度归一化加权和（对所有邻居一视同仁、不区分边方向或相对特征差），在异配图与复杂视觉图（如 `CIFAR10` 超像素）上表达力明显弱于各向异性门控或 `max` 聚合；但**正因为 $\hat{A}HW$ 是纯线性运算，它在数学上天然满足脉冲率编码的线性可交换性（如 `One-Spike SNN` 转换 Text GCN）**。
+- 是否需要训练或微调：是（全图批量梯度下降 + Dropout 训练两层网络）
+- 涉及的算子：加自环邻接矩阵 $\tilde{A}=A+I_N$、对称度归一化拉普拉斯算子 $\hat{A}=\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}$（Eq. 2 & Eq. 8）、稀疏—稠密矩阵乘法 $\hat{A}H^{(l)}W^{(l)}$、`ReLU`、行向 `Softmax`（Eq. 9）
+- 关键数字：半监督节点分类精度与收敛耗时（Section 6.1 Table 2，第 7 页）：`Citeseer` **70.3%**（7s）、`Cora` **81.5%**（4s，随机划分 **80.1±0.5%**）、`Pubmed` **79.0%**（38s）、`NELL` **66.0%**（48s）；消融对比（Table 3，第 7 页）证实加自环重归一化 trick 在 `Cora` 上（**81.5%**）显著优于不加自环的一阶模型（78.0%）与未重归一化的 $I_N+D^{-1/2}AD^{-1/2}$（78.9%）；单层计算复杂度为 **$O(|\mathcal{E}|FC)$**（Section 2.2 Eq. 8，第 3 页）。
+- 与本方向的关系：背景（图神经网络与脉冲图转换推导的第一性原理起点：它清晰展示了“固定图 + 线性加权求和 + ReLU”在代数上等价于修正权重后的线性层，从而与视觉图的动态 $k$-NN + `max` 形成最鲜明对比；任务 04 新增背景条目）
+- 核对人与日期：Gemini，2026-11-18
+
+### MPNN 消息传递框架（2017）
+
+- 标题：Neural Message Passing for Quantum Chemistry
+- 作者：Justin Gilmer, Samuel S. Schoenholz, Patrick F. Riley, Oriol Vinyals, George E. Dahl
+- 发表处：Proceedings of the 34th International Conference on Machine Learning（ICML 2017，PMLR Vol. 70，pp. 1263–1272；预印本 `arXiv:1704.01212`）
+- 链接：http://proceedings.mlr.press/v70/gilmer17a.html （预印本：https://arxiv.org/abs/1704.01212 ）；代码：https://github.com/brain-research/mpnn
+- 核对深度：全文（arXiv v2 全文 14 页核对）
+- 一句话：把十余种图神经网络统一抽象为“消息生成 $M_t(h_v^t,h_w^t,e_{vw})$ — 置换不变邻域聚合 — 节点状态更新 $U_t(h_v^t,m_v^{t+1})$ — 全图读出 $R$”的消息传递神经网络（MPNN）通用框架，并在 13 万分子量子化学基准 `QM9` 的全部 13 个目标上达到 DFT 化学精度。
+- 解决的难点：统一了谱图卷积（如 Kipf & Welling GCN）、门控图网络（GG-NN）、分子指纹网络与交互网络的数学语言，揭示了边特征调制与置换不变聚合算子在几何图学习中的核心地位。
+- 留下的局限：原始公式（Eq. 1）以邻域求和 $\sum_{w\in N(v)}$ 为默认聚合形式，后续由 GraphSAGE、PointNet++、DGCNN 与 ViG 将置换不变聚合拓展至逐通道 `max` 与注意力加权；而在脉冲转换视角下，恰恰是“消息函数 $M_t$ 与聚合算子是否线性”决定了发放率与算子能否交换顺序。
+- 是否需要训练或微调：是（Adam 优化器训练 300 万步 / 约 540 轮，Section 7，第 7 页）
+- 涉及的算子：消息函数 $m_v^{t+1}=\sum_{w\in N(v)} M_t(h_v^t,h_w^t,e_{vw})$（Eq. 1，边网络矩阵乘 $A(e_{vw})h_w^t$）、节点更新函数 $h_v^{t+1}=U_t(h_v^t,m_v^{t+1})$（Eq. 2，GRU）、全图置换不变读出 $R(\{h_v^T\})$（Eq. 3，`set2set` 注意力读出）
+- 关键数字：`QM9`（130,462 个分子，13 项量子力学属性回归，以相对 DFT 化学精度的平均误差比 Error Ratio 衡量，$<1.0$ 即达到化学精度，Section 8 Table 2，第 8 页）：单模型 `enn-s2s` 平均误差比达 **0.68**（在 13 个目标中的 11 个上 $<1.0$），5 模型集成 `enn-s2s-ens5` 平均误差比进一步降至 **0.52**（对比传统分子指纹 ECFP4 的 53.97 与基线 GG-NN 的 1.36）。
+- 与本方向的关系：背景（统摄 GCN、ViG、DGCNN、MobileViG、ST-GCN 与 AEGNN 的通用数学骨架，任务 04 第 4 章用它统一刻画求和、均值、最大值三类聚合；任务 04 新增背景条目）
+- 核对人与日期：Gemini，2026-11-18
+
 ---
 
 ## 这条线是怎么演化的
