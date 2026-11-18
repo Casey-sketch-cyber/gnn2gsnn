@@ -38,5 +38,5 @@
 8. **沟通**：始终用中文回复用户。
 
 ## 当前注意事项
-- 任务 04 分五批交付，每批合并后再开始下一批。
-- 不提交论文 PDF；受版权保护的论文不发布全文译文。详见 `docs/DECISIONS.md` 2026-11-18 条。
+- 任务 04 分六批交付，每批合并后再开始下一批。
+- 论文 PDF 和中文全文译文只供项目所有者个人学习。提交译文前必须确认仓库为私有（`gh api repos/Casey-sketch-cyber/gnn2gsnn --jq .private` 输出 `true`），否则停下来告诉他。PDF 不进 git。详见 `tasks/04-deep-curriculum.md` 的 C0 和 `docs/DECISIONS.md`。
