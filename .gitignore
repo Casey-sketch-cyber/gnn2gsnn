@@ -66,3 +66,7 @@ data/raw/
 *.zip
 *.tar.gz
 *.mp4
+
+# 论文 PDF 只下载到本机，不进仓库（见 docs/DECISIONS.md）
+papers/
+*.pdf
