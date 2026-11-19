@@ -1,119 +1,119 @@
-短名,年份,论文页,PDF,许可证,精读层级
-Yan 等：QNN-SNN Twin 能耗分析,2026,https://arxiv.org/abs/2409.08290,https://arxiv.org/pdf/2409.08290.pdf,CC BY 4.0,A
-DCGS,2025,https://arxiv.org/abs/2503.00301,https://arxiv.org/pdf/2503.00301.pdf,CC BY 4.0,A
-Inference-Scale Conversion,2025,https://arxiv.org/abs/2409.03368,https://arxiv.org/pdf/2409.03368.pdf,CC BY 4.0,A
-One-Spike SNN,2025,https://arxiv.org/abs/2403.08786,https://arxiv.org/pdf/2403.08786.pdf,CC BY-NC-ND 4.0,A
-STA,2024,https://openreview.net/forum?id=135eKq323G,https://openreview.net/pdf?id=135eKq323G,CC BY 4.0,A
-Lan 等 3D/2D 转换 SNN,2023,https://openaccess.thecvf.com/content/ICCV2023/html/Lan_Efficient_Converted_Spiking_Neural_Network_for_3D_and_2D_Classification_ICCV_2023_paper.html,https://openaccess.thecvf.com/content/ICCV2023/papers/Lan_Efficient_Converted_Spiking_Neural_Network_for_3D_and_2D_Classification_ICCV_2023_paper.pdf,出版社版权,A
-MobileViG,2023,https://arxiv.org/abs/2307.00395,https://arxiv.org/pdf/2307.00395.pdf,arXiv 非独占许可,A
-AEGNN,2022,https://arxiv.org/abs/2203.17149,https://arxiv.org/pdf/2203.17149.pdf,arXiv 非独占许可,A
-DeltaCNN,2022,https://arxiv.org/abs/2203.03996,https://arxiv.org/pdf/2203.03996.pdf,CC BY 4.0,A
-QCFS,2022,https://arxiv.org/abs/2303.04347,https://arxiv.org/pdf/2303.04347.pdf,CC BY 4.0,A
-SpikingGCN,2022,https://arxiv.org/abs/2205.02767,https://arxiv.org/pdf/2205.02767.pdf,arXiv 非独占许可,A
-ViG 与 Pyramid ViG,2022,https://arxiv.org/abs/2206.00272,https://arxiv.org/pdf/2206.00272.pdf,arXiv 非独占许可,A
-SNNC-AP / SNN Calibration,2021,https://arxiv.org/abs/2106.06984,https://arxiv.org/pdf/2106.06984.pdf,CC BY-NC-ND 4.0,A
-DGCNN,2019,https://arxiv.org/abs/1801.07829,https://arxiv.org/pdf/1801.07829.pdf,arXiv 非独占许可,A
-Surrogate Gradient 综述,2019,https://arxiv.org/abs/1901.09948,https://arxiv.org/pdf/1901.09948.pdf,arXiv 非独占许可,A
-ST-GCN,2018,https://arxiv.org/abs/1801.07455,https://arxiv.org/pdf/1801.07455.pdf,arXiv 非独占许可,A
-GCN 奠基,2017,https://arxiv.org/abs/1609.02907,https://arxiv.org/pdf/1609.02907.pdf,arXiv 非独占许可,A
-MPNN 消息传递框架,2017,https://arxiv.org/abs/1704.01212,https://arxiv.org/pdf/1704.01212.pdf,arXiv 非独占许可,A
-SNN Toolbox,2017,https://arxiv.org/abs/1612.04052,https://arxiv.org/pdf/1612.04052.pdf,arXiv 非独占许可,A
-Sigma-Delta,2017,https://arxiv.org/abs/1611.02024,https://arxiv.org/pdf/1611.02024.pdf,arXiv 非独占许可,A
-Spiking Deep CNN 奠基,2015,https://doi.org/10.1007/s11263-014-0788-3,需机构访问,出版社版权,A
-Weight & Threshold Balancing,2015,https://doi.org/10.1109/IJCNN.2015.7280696,需机构访问,出版社版权,A
-Horowitz,2014,https://doi.org/10.1109/ISSCC.2014.6757323,需机构访问,出版社版权,A
-ETHEREAL,2026,https://arxiv.org/abs/2608.17787,https://arxiv.org/pdf/2608.17787.pdf,arXiv 非独占许可,B
-MBE 脉冲浮点转换,2026,https://arxiv.org/abs/2508.07710,https://arxiv.org/pdf/2508.07710.pdf,arXiv 非独占许可,B
-MK-SGN,2026,https://arxiv.org/abs/2404.10210,https://arxiv.org/pdf/2404.10210.pdf,arXiv 非独占许可,B
-RIPPLE++,2026,https://arxiv.org/abs/2601.12347,https://arxiv.org/pdf/2601.12347.pdf,arXiv 非独占许可,B
-TopGQ,2026,https://arxiv.org/abs/2608.30394,https://arxiv.org/pdf/2608.30394.pdf,CC BY 4.0,B
-Adaptive Calibration,2025,https://arxiv.org/abs/2412.16219,https://arxiv.org/pdf/2412.16219.pdf,arXiv 非独占许可,B
-EvGNN,2025,https://arxiv.org/abs/2404.19489,https://arxiv.org/pdf/2404.19489.pdf,arXiv 非独占许可,B
-InkStream,2025,https://arxiv.org/abs/2309.11071,https://arxiv.org/pdf/2309.11071.pdf,arXiv 非独占许可,B
-NI-SGCN,2025,https://arxiv.org/abs/2502.19660,https://arxiv.org/pdf/2502.19660.pdf,arXiv 非独占许可,B
-PMSM,2025,https://arxiv.org/abs/2508.14520,https://arxiv.org/pdf/2508.14520.pdf,CC BY-NC-SA 4.0,B
-SGNNBench,2025,https://arxiv.org/abs/2509.21342,https://arxiv.org/pdf/2509.21342.pdf,arXiv 非独占许可,B
-Signal-SGN,2025,https://arxiv.org/abs/2408.01701,https://arxiv.org/pdf/2408.01701.pdf,arXiv 非独占许可,B
-DAGr,2024,https://doi.org/10.1038/s41586-024-07409-w,需机构访问,出版社版权,B
-ECMT,2024,https://arxiv.org/abs/2502.21193,https://arxiv.org/pdf/2502.21193.pdf,CC BY 4.0,B
-FTBC,2024,https://arxiv.org/abs/2403.18388,https://arxiv.org/pdf/2403.18388.pdf,arXiv 非独占许可,B
-GreedyViG,2024,https://arxiv.org/abs/2405.06849,https://arxiv.org/pdf/2405.06849.pdf,arXiv 非独占许可,B
-SpikeZIP-TF,2024,https://arxiv.org/abs/2406.03470,https://arxiv.org/pdf/2406.03470.pdf,CC BY 4.0,B
-Spiking PointCNN,2024,https://www.mdpi.com/2079-9292/13/18/3626,https://www.mdpi.com/2079-9292/13/18/3626/pdf,CC BY 4.0,B
-COS,2023,https://arxiv.org/abs/2302.10685,https://arxiv.org/pdf/2302.10685.pdf,arXiv 非独占许可,B
-CoST-GCN,2023,https://arxiv.org/abs/2203.11009,https://arxiv.org/pdf/2203.11009.pdf,arXiv 非独占许可,B
-Eventful Transformers,2023,https://arxiv.org/abs/2308.13494,https://arxiv.org/pdf/2308.13494.pdf,arXiv 非独占许可,B
-Fast-SNN,2023,https://arxiv.org/abs/2305.19868,https://arxiv.org/pdf/2305.19868.pdf,arXiv 非独占许可,B
-Ottati 等：To Spike or Not To Spike,2023,https://arxiv.org/abs/2306.15749,https://arxiv.org/pdf/2306.15749.pdf,CC BY 4.0,B
-Spiking PointNet,2023,https://arxiv.org/abs/2310.06232,https://arxiv.org/pdf/2310.06232.pdf,CC BY 4.0,B
-Benchmarking GNNs 超像素视觉图基准,2022,https://arxiv.org/abs/2003.00982,https://arxiv.org/pdf/2003.00982.pdf,arXiv 非独占许可,B
-Burst + LIPooling,2022,https://arxiv.org/abs/2204.13271,https://arxiv.org/pdf/2204.13271.pdf,arXiv 非独占许可,B
-EvNets,2022,https://arxiv.org/abs/2112.00891,https://arxiv.org/pdf/2112.00891.pdf,arXiv 非独占许可,B
-Lemaire 等：SNN 与 FNN 解析能耗模型,2022,https://arxiv.org/abs/2210.13107,https://arxiv.org/pdf/2210.13107.pdf,CC BY 4.0,B
-PointNeXt,2022,https://arxiv.org/abs/2206.04670,https://arxiv.org/pdf/2206.04670.pdf,CC BY-NC-SA 4.0,B
-Spiking MaxPooling 电路,2022,https://arxiv.org/abs/2205.07076,https://arxiv.org/pdf/2205.07076.pdf,arXiv 非独占许可,B
-CTR-GCN,2021,https://arxiv.org/abs/2107.12213,https://arxiv.org/pdf/2107.12213.pdf,CC BY 4.0,B
-RMP-SNN,2020,https://arxiv.org/abs/2003.01811,https://arxiv.org/pdf/2003.01811.pdf,arXiv 非独占许可,B
-Spike-Norm,2019,https://arxiv.org/abs/1802.02627,https://arxiv.org/pdf/1802.02627.pdf,arXiv 非独占许可,B
-PointNet++,2017,https://arxiv.org/abs/1706.02413,https://arxiv.org/pdf/1706.02413.pdf,arXiv 非独占许可,B
-ResGatedGCN,2017,https://arxiv.org/abs/1711.07553,https://arxiv.org/pdf/1711.07553.pdf,arXiv 非独占许可,B
-AMP2,2026,https://arxiv.org/abs/2502.12791,https://arxiv.org/pdf/2502.12791.pdf,arXiv 非独占许可,C
-DeNA-SGN,2026,https://arxiv.org/abs/2611.14775,https://arxiv.org/pdf/2611.14775.pdf,CC BY-NC-ND 4.0,C
-EDA-GNN / Liu 等,2026,https://doi.org/10.1109/TCSI.2026.3679753,需机构访问,出版社版权,C
-EFGCN,2026,https://arxiv.org/abs/2406.07318,https://arxiv.org/pdf/2406.07318.pdf,CC BY-NC-ND 4.0,C
-GT-SNT,2026,https://arxiv.org/abs/2504.11840,https://arxiv.org/pdf/2504.11840.pdf,arXiv 非独占许可,C
-GraphPTQ,2026,https://openreview.net/forum?id=nyGjkikNrz,https://openreview.net/pdf?id=nyGjkikNrz,CC BY 4.0,C
-NeutronRT,2026,https://arxiv.org/abs/2603.20622,https://arxiv.org/pdf/2603.20622.pdf,CC BY 4.0,C
-Reforge,2026,https://arxiv.org/abs/2501.08547,https://arxiv.org/pdf/2501.08547.pdf,arXiv 非独占许可,C
-SpikeGraphormer,2026,https://arxiv.org/abs/2403.15480,https://arxiv.org/pdf/2403.15480.pdf,arXiv 非独占许可,C
-AMPLE,2025,https://doi.org/10.1145/3721146.3721963,需机构访问,出版社版权,C
-Adaptive Fission,2025,https://openreview.net/forum?id=2zZzdAMyYi,https://openreview.net/pdf?id=2zZzdAMyYi,CC BY 4.0,C
-DVHGNN,2025,https://arxiv.org/abs/2503.14867,https://arxiv.org/pdf/2503.14867.pdf,arXiv 非独占许可,C
-E-3DSNN,2025,https://arxiv.org/abs/2412.07360,https://arxiv.org/pdf/2412.07360.pdf,arXiv 非独占许可,C
-Parallel Conversion,2025,https://arxiv.org/abs/2412.13610,https://arxiv.org/pdf/2412.13610.pdf,arXiv 非独占许可,C
-Ripple,2025,https://arxiv.org/abs/2505.12112,https://arxiv.org/pdf/2505.12112.pdf,arXiv 非独占许可,C
-Signal-SGN++,2025,https://arxiv.org/abs/2512.22214,https://arxiv.org/pdf/2512.22214.pdf,arXiv 非独占许可,C
-Spiking Point Mamba,2025,https://arxiv.org/abs/2504.14371,https://arxiv.org/pdf/2504.14371.pdf,arXiv 非独占许可,C
-Spiking Point Transformer,2025,https://arxiv.org/abs/2502.15811,https://arxiv.org/pdf/2502.15811.pdf,arXiv 非独占许可,C
-Bhattacharjee 等：SATA 与 SpikeSim 硬件评测,2024,https://arxiv.org/abs/2309.03388,https://arxiv.org/pdf/2309.03388.pdf,arXiv 非独占许可,C
-BlockGCN,2024,https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_BlockGCN_Redefine_Topology_Awareness_for_Skeleton-Based_Action_Recognition_CVPR_2024_paper.html,https://openaccess.thecvf.com/content/CVPR2024/papers/Zhou_BlockGCN_Redefine_Topology_Awareness_for_Skeleton-Based_Action_Recognition_CVPR_2024_paper.pdf,出版社版权,C
-DRA,2024,https://doi.org/10.1109/NorCAS64408.2024.10752486,需机构访问,出版社版权,C
-DRSGNN,2024,https://doi.org/10.1609/aaai.v38i15.29640,需机构访问,出版社版权,C
-Dy-SIGN,2024,https://arxiv.org/abs/2401.05373,https://arxiv.org/pdf/2401.05373.pdf,CC BY 4.0,C
-Loihi Transductive SGNN,2024,https://arxiv.org/abs/2404.17048,https://arxiv.org/pdf/2404.17048.pdf,CC BY 4.0,C
-MSG,2024,https://arxiv.org/abs/2410.17941,https://arxiv.org/pdf/2410.17941.pdf,CC BY-NC-SA 4.0,C
-MobileViGv2,2024,https://arxiv.org/abs/2406.05850,https://arxiv.org/pdf/2406.05850.pdf,arXiv 非独占许可,C
-P2SResLNet,2024,https://doi.org/10.1609/aaai.v38i6.28425,需机构访问,出版社版权,C
-Point Transformer V3 / PTv3,2024,https://arxiv.org/abs/2312.10035,https://arxiv.org/pdf/2312.10035.pdf,arXiv 非独占许可,C
-SpiNNaker 2,2024,https://arxiv.org/abs/2401.04491,https://arxiv.org/pdf/2401.04491.pdf,arXiv 非独占许可,C
-SpikeGCL,2024,https://arxiv.org/abs/2305.19306,https://arxiv.org/pdf/2305.19306.pdf,arXiv 非独占许可,C
-SpikePoint,2024,https://arxiv.org/abs/2310.07189,https://arxiv.org/pdf/2310.07189.pdf,arXiv 非独占许可,C
-SpikedAttention,2024,https://proceedings.neurips.cc/paper_files/paper/2024/hash/7c9341ad0263428b5057d92f4d88dfa0-Abstract-Conference.html,https://proceedings.neurips.cc/paper_files/paper/2024/file/7c9341ad0263428b5057d92f4d88dfa0-Paper-Conference.pdf,出版社版权,C
-Dampfhoffer 等：硬件感知 SNN vs ANN 研究,2023,https://doi.org/10.1109/TETCI.2022.3233696,需机构访问,出版社版权,C
-HD-GCN,2023,https://arxiv.org/abs/2208.10741,https://arxiv.org/pdf/2208.10741.pdf,arXiv 非独占许可,C
-MST,2023,https://arxiv.org/abs/2210.01208,https://arxiv.org/pdf/2210.01208.pdf,arXiv 非独占许可,C
-MotionDeltaCNN,2023,https://arxiv.org/abs/2210.09887,https://arxiv.org/pdf/2210.09887.pdf,CC BY-NC-SA 4.0,C
-SENECA,2023,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1187252/full,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1187252/pdf,CC BY 4.0,C
-SpikeNet,2023,https://arxiv.org/abs/2208.10364,https://arxiv.org/pdf/2208.10364.pdf,arXiv 非独占许可,C
-ViHGNN 与 Pyramid ViHGNN,2023,https://openaccess.thecvf.com/content/ICCV2023/html/Han_Vision_HGNN_An_Image_is_More_than_a_Graph_of_ICCV_2023_paper.html,https://openaccess.thecvf.com/content/ICCV2023/papers/Han_Vision_HGNN_An_Image_is_More_than_a_Graph_of_ICCV_2023_paper.pdf,出版社版权,C
-DynaGraph,2022,https://doi.org/10.1145/3534540.3534691,需机构访问,出版社版权,C
-InfoGCN,2022,https://openaccess.thecvf.com/content/CVPR2022/html/Chi_InfoGCN_Representation_Learning_for_Human_Skeleton-Based_Action_Recognition_CVPR_2022_paper.html,https://openaccess.thecvf.com/content/CVPR2022/papers/Chi_InfoGCN_Representation_Learning_for_Human_Skeleton-Based_Action_Recognition_CVPR_2022_paper.pdf,出版社版权,C
-InstantGNN,2022,https://arxiv.org/abs/2206.01379,https://arxiv.org/pdf/2206.01379.pdf,arXiv 非独占许可,C
-SpiCalib 与 MLIPooling,2022,https://arxiv.org/abs/2207.02702,https://arxiv.org/pdf/2207.02702.pdf,arXiv 非独占许可,C
-Davidson & Furber,2021,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.651141/full,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.651141/pdf,CC BY 4.0,C
-Degree-Quant,2021,https://arxiv.org/abs/2008.05000,https://arxiv.org/pdf/2008.05000.pdf,arXiv 非独占许可,C
-GC-SNN 与 GA-SNN,2021,https://arxiv.org/abs/2107.06865,https://arxiv.org/pdf/2107.06865.pdf,arXiv 非独占许可,C
-Ingress,2021,https://vldb.org/pvldb/vol14/p1613-gong.pdf,https://vldb.org/pvldb/vol14/p1613-gong.pdf,CC BY-NC-ND 4.0,C
-Loihi 2,2021,https://arxiv.org/abs/2111.03746,https://arxiv.org/pdf/2111.03746.pdf,arXiv 非独占许可,C
-Point Transformer / PTv1,2021,https://arxiv.org/abs/2012.09164,https://arxiv.org/pdf/2012.09164.pdf,arXiv 非独占许可,C
-RTS / Optimal Conversion,2021,https://arxiv.org/abs/2103.00476,https://arxiv.org/pdf/2103.00476.pdf,arXiv 非独占许可,C
-Skip-Conv,2021,https://arxiv.org/abs/2104.11487,https://arxiv.org/pdf/2104.11487.pdf,CC BY 4.0,C
-CBinfer 期刊版,2020,https://arxiv.org/abs/1808.05488,https://arxiv.org/pdf/1808.05488.pdf,arXiv 非独占许可,C
-SGQuant,2020,https://arxiv.org/abs/2007.05100,https://arxiv.org/pdf/2007.05100.pdf,arXiv 非独占许可,C
-Spiking-YOLO,2020,https://arxiv.org/abs/1903.06530,https://arxiv.org/pdf/1903.06530.pdf,arXiv 非独占许可,C
-TactileSGNet,2020,https://arxiv.org/abs/2008.08046,https://arxiv.org/pdf/2008.08046.pdf,arXiv 非独占许可,C
-2s-AGCN,2019,https://arxiv.org/abs/1805.07694,https://arxiv.org/pdf/1805.07694.pdf,arXiv 非独占许可,C
-RG-CNNs,2019,https://arxiv.org/abs/1908.06648,https://arxiv.org/pdf/1908.06648.pdf,arXiv 非独占许可,C
-Tianjic,2019,https://doi.org/10.1038/s41586-019-1424-8,需机构访问,出版社版权,C
-CBinfer 会议版,2017,https://arxiv.org/abs/1704.04313,https://arxiv.org/pdf/1704.04313.pdf,arXiv 非独占许可,C
-Delta 网络,2017,https://arxiv.org/abs/1612.05571,https://arxiv.org/pdf/1612.05571.pdf,arXiv 非独占许可,C
+短名,年份,论文页,PDF,许可证,精读层级,存放位置
+Yan 等：QNN-SNN Twin 能耗分析,2026,https://arxiv.org/abs/2409.08290,https://arxiv.org/pdf/2409.08290.pdf,CC BY 4.0,A,Notion 附件
+DCGS,2025,https://arxiv.org/abs/2503.00301,https://arxiv.org/pdf/2503.00301.pdf,CC BY 4.0,A,Notion 附件
+Inference-Scale Conversion,2025,https://arxiv.org/abs/2409.03368,https://arxiv.org/pdf/2409.03368.pdf,CC BY 4.0,A,Notion 附件
+One-Spike SNN,2025,https://arxiv.org/abs/2403.08786,https://arxiv.org/pdf/2403.08786.pdf,CC BY-NC-ND 4.0,A,Notion 附件
+STA,2024,https://openreview.net/forum?id=135eKq323G,https://openreview.net/pdf?id=135eKq323G,CC BY 4.0,A,仅官方链接
+Lan 等 3D/2D 转换 SNN,2023,https://openaccess.thecvf.com/content/ICCV2023/html/Lan_Efficient_Converted_Spiking_Neural_Network_for_3D_and_2D_Classification_ICCV_2023_paper.html,https://openaccess.thecvf.com/content/ICCV2023/papers/Lan_Efficient_Converted_Spiking_Neural_Network_for_3D_and_2D_Classification_ICCV_2023_paper.pdf,出版社版权,A,Notion 附件
+MobileViG,2023,https://arxiv.org/abs/2307.00395,https://arxiv.org/pdf/2307.00395.pdf,arXiv 非独占许可,A,Notion 附件
+AEGNN,2022,https://arxiv.org/abs/2203.17149,https://arxiv.org/pdf/2203.17149.pdf,arXiv 非独占许可,A,Notion 附件
+DeltaCNN,2022,https://arxiv.org/abs/2203.03996,https://arxiv.org/pdf/2203.03996.pdf,CC BY 4.0,A,Notion 附件
+QCFS,2022,https://arxiv.org/abs/2303.04347,https://arxiv.org/pdf/2303.04347.pdf,CC BY 4.0,A,Notion 附件
+SpikingGCN,2022,https://arxiv.org/abs/2205.02767,https://arxiv.org/pdf/2205.02767.pdf,arXiv 非独占许可,A,Notion 附件
+ViG 与 Pyramid ViG,2022,https://arxiv.org/abs/2206.00272,https://arxiv.org/pdf/2206.00272.pdf,arXiv 非独占许可,A,Google 云端硬盘
+SNNC-AP / SNN Calibration,2021,https://arxiv.org/abs/2106.06984,https://arxiv.org/pdf/2106.06984.pdf,CC BY-NC-ND 4.0,A,Notion 附件
+DGCNN,2019,https://arxiv.org/abs/1801.07829,https://arxiv.org/pdf/1801.07829.pdf,arXiv 非独占许可,A,Google 云端硬盘
+Surrogate Gradient 综述,2019,https://arxiv.org/abs/1901.09948,https://arxiv.org/pdf/1901.09948.pdf,arXiv 非独占许可,A,Notion 附件
+ST-GCN,2018,https://arxiv.org/abs/1801.07455,https://arxiv.org/pdf/1801.07455.pdf,arXiv 非独占许可,A,Notion 附件
+GCN 奠基,2017,https://arxiv.org/abs/1609.02907,https://arxiv.org/pdf/1609.02907.pdf,arXiv 非独占许可,A,Notion 附件
+MPNN 消息传递框架,2017,https://arxiv.org/abs/1704.01212,https://arxiv.org/pdf/1704.01212.pdf,arXiv 非独占许可,A,Notion 附件
+SNN Toolbox,2017,https://arxiv.org/abs/1612.04052,https://arxiv.org/pdf/1612.04052.pdf,arXiv 非独占许可,A,Notion 附件
+Sigma-Delta,2017,https://arxiv.org/abs/1611.02024,https://arxiv.org/pdf/1611.02024.pdf,arXiv 非独占许可,A,Notion 附件
+Spiking Deep CNN 奠基,2015,https://doi.org/10.1007/s11263-014-0788-3,需机构访问,出版社版权,A,仅官方链接
+Weight & Threshold Balancing,2015,https://doi.org/10.1109/IJCNN.2015.7280696,需机构访问,出版社版权,A,仅官方链接
+Horowitz,2014,https://doi.org/10.1109/ISSCC.2014.6757323,需机构访问,出版社版权,A,仅官方链接
+ETHEREAL,2026,https://arxiv.org/abs/2608.17787,https://arxiv.org/pdf/2608.17787.pdf,arXiv 非独占许可,B,Google 云端硬盘
+MBE 脉冲浮点转换,2026,https://arxiv.org/abs/2508.07710,https://arxiv.org/pdf/2508.07710.pdf,arXiv 非独占许可,B,Notion 附件
+MK-SGN,2026,https://arxiv.org/abs/2404.10210,https://arxiv.org/pdf/2404.10210.pdf,arXiv 非独占许可,B,Google 云端硬盘
+RIPPLE++,2026,https://arxiv.org/abs/2601.12347,https://arxiv.org/pdf/2601.12347.pdf,arXiv 非独占许可,B,Notion 附件
+TopGQ,2026,https://arxiv.org/abs/2608.30394,https://arxiv.org/pdf/2608.30394.pdf,CC BY 4.0,B,Notion 附件
+Adaptive Calibration,2025,https://arxiv.org/abs/2412.16219,https://arxiv.org/pdf/2412.16219.pdf,arXiv 非独占许可,B,Notion 附件
+EvGNN,2025,https://arxiv.org/abs/2404.19489,https://arxiv.org/pdf/2404.19489.pdf,arXiv 非独占许可,B,Notion 附件
+InkStream,2025,https://arxiv.org/abs/2309.11071,https://arxiv.org/pdf/2309.11071.pdf,arXiv 非独占许可,B,Notion 附件
+NI-SGCN,2025,https://arxiv.org/abs/2502.19660,https://arxiv.org/pdf/2502.19660.pdf,arXiv 非独占许可,B,Notion 附件
+PMSM,2025,https://arxiv.org/abs/2508.14520,https://arxiv.org/pdf/2508.14520.pdf,CC BY-NC-SA 4.0,B,Notion 附件
+SGNNBench,2025,https://arxiv.org/abs/2509.21342,https://arxiv.org/pdf/2509.21342.pdf,arXiv 非独占许可,B,Notion 附件
+Signal-SGN,2025,https://arxiv.org/abs/2408.01701,https://arxiv.org/pdf/2408.01701.pdf,arXiv 非独占许可,B,Notion 附件
+DAGr,2024,https://doi.org/10.1038/s41586-024-07409-w,需机构访问,出版社版权,B,仅官方链接
+ECMT,2024,https://arxiv.org/abs/2502.21193,https://arxiv.org/pdf/2502.21193.pdf,CC BY 4.0,B,Notion 附件
+FTBC,2024,https://arxiv.org/abs/2403.18388,https://arxiv.org/pdf/2403.18388.pdf,arXiv 非独占许可,B,Notion 附件
+GreedyViG,2024,https://arxiv.org/abs/2405.06849,https://arxiv.org/pdf/2405.06849.pdf,arXiv 非独占许可,B,Notion 附件
+SpikeZIP-TF,2024,https://arxiv.org/abs/2406.03470,https://arxiv.org/pdf/2406.03470.pdf,CC BY 4.0,B,Notion 附件
+Spiking PointCNN,2024,https://www.mdpi.com/2079-9292/13/18/3626,https://www.mdpi.com/2079-9292/13/18/3626/pdf,CC BY 4.0,B,Notion 附件
+COS,2023,https://arxiv.org/abs/2302.10685,https://arxiv.org/pdf/2302.10685.pdf,arXiv 非独占许可,B,Notion 附件
+CoST-GCN,2023,https://arxiv.org/abs/2203.11009,https://arxiv.org/pdf/2203.11009.pdf,arXiv 非独占许可,B,Notion 附件
+Eventful Transformers,2023,https://arxiv.org/abs/2308.13494,https://arxiv.org/pdf/2308.13494.pdf,arXiv 非独占许可,B,Notion 附件
+Fast-SNN,2023,https://arxiv.org/abs/2305.19868,https://arxiv.org/pdf/2305.19868.pdf,arXiv 非独占许可,B,Notion 附件
+Ottati 等：To Spike or Not To Spike,2023,https://arxiv.org/abs/2306.15749,https://arxiv.org/pdf/2306.15749.pdf,CC BY 4.0,B,Google 云端硬盘
+Spiking PointNet,2023,https://arxiv.org/abs/2310.06232,https://arxiv.org/pdf/2310.06232.pdf,CC BY 4.0,B,Notion 附件
+Benchmarking GNNs 超像素视觉图基准,2022,https://arxiv.org/abs/2003.00982,https://arxiv.org/pdf/2003.00982.pdf,arXiv 非独占许可,B,Notion 附件
+Burst + LIPooling,2022,https://arxiv.org/abs/2204.13271,https://arxiv.org/pdf/2204.13271.pdf,arXiv 非独占许可,B,Notion 附件
+EvNets,2022,https://arxiv.org/abs/2112.00891,https://arxiv.org/pdf/2112.00891.pdf,arXiv 非独占许可,B,Google 云端硬盘
+Lemaire 等：SNN 与 FNN 解析能耗模型,2022,https://arxiv.org/abs/2210.13107,https://arxiv.org/pdf/2210.13107.pdf,CC BY 4.0,B,Notion 附件
+PointNeXt,2022,https://arxiv.org/abs/2206.04670,https://arxiv.org/pdf/2206.04670.pdf,CC BY-NC-SA 4.0,B,Notion 附件
+Spiking MaxPooling 电路,2022,https://arxiv.org/abs/2205.07076,https://arxiv.org/pdf/2205.07076.pdf,arXiv 非独占许可,B,Google 云端硬盘
+CTR-GCN,2021,https://arxiv.org/abs/2107.12213,https://arxiv.org/pdf/2107.12213.pdf,CC BY 4.0,B,Notion 附件
+RMP-SNN,2020,https://arxiv.org/abs/2003.01811,https://arxiv.org/pdf/2003.01811.pdf,arXiv 非独占许可,B,Notion 附件
+Spike-Norm,2019,https://arxiv.org/abs/1802.02627,https://arxiv.org/pdf/1802.02627.pdf,arXiv 非独占许可,B,Notion 附件
+PointNet++,2017,https://arxiv.org/abs/1706.02413,https://arxiv.org/pdf/1706.02413.pdf,arXiv 非独占许可,B,Notion 附件
+ResGatedGCN,2017,https://arxiv.org/abs/1711.07553,https://arxiv.org/pdf/1711.07553.pdf,arXiv 非独占许可,B,Notion 附件
+AMP2,2026,https://arxiv.org/abs/2502.12791,https://arxiv.org/pdf/2502.12791.pdf,arXiv 非独占许可,C,Notion 附件
+DeNA-SGN,2026,https://arxiv.org/abs/2611.14775,https://arxiv.org/pdf/2611.14775.pdf,CC BY-NC-ND 4.0,C,Notion 附件
+EDA-GNN / Liu 等,2026,https://doi.org/10.1109/TCSI.2026.3679753,需机构访问,出版社版权,C,仅官方链接
+EFGCN,2026,https://arxiv.org/abs/2406.07318,https://arxiv.org/pdf/2406.07318.pdf,CC BY-NC-ND 4.0,C,Notion 附件
+GT-SNT,2026,https://arxiv.org/abs/2504.11840,https://arxiv.org/pdf/2504.11840.pdf,arXiv 非独占许可,C,Notion 附件
+GraphPTQ,2026,https://openreview.net/forum?id=nyGjkikNrz,https://openreview.net/pdf?id=nyGjkikNrz,CC BY 4.0,C,仅官方链接
+NeutronRT,2026,https://arxiv.org/abs/2603.20622,https://arxiv.org/pdf/2603.20622.pdf,CC BY 4.0,C,Notion 附件
+Reforge,2026,https://arxiv.org/abs/2501.08547,https://arxiv.org/pdf/2501.08547.pdf,arXiv 非独占许可,C,Notion 附件
+SpikeGraphormer,2026,https://arxiv.org/abs/2403.15480,https://arxiv.org/pdf/2403.15480.pdf,arXiv 非独占许可,C,Notion 附件
+AMPLE,2025,https://doi.org/10.1145/3721146.3721963,需机构访问,出版社版权,C,仅官方链接
+Adaptive Fission,2025,https://openreview.net/forum?id=2zZzdAMyYi,https://openreview.net/pdf?id=2zZzdAMyYi,CC BY 4.0,C,仅官方链接
+DVHGNN,2025,https://arxiv.org/abs/2503.14867,https://arxiv.org/pdf/2503.14867.pdf,arXiv 非独占许可,C,Google 云端硬盘
+E-3DSNN,2025,https://arxiv.org/abs/2412.07360,https://arxiv.org/pdf/2412.07360.pdf,arXiv 非独占许可,C,Google 云端硬盘
+Parallel Conversion,2025,https://arxiv.org/abs/2412.13610,https://arxiv.org/pdf/2412.13610.pdf,arXiv 非独占许可,C,Notion 附件
+Ripple,2025,https://arxiv.org/abs/2505.12112,https://arxiv.org/pdf/2505.12112.pdf,arXiv 非独占许可,C,Notion 附件
+Signal-SGN++,2025,https://arxiv.org/abs/2512.22214,https://arxiv.org/pdf/2512.22214.pdf,arXiv 非独占许可,C,Google 云端硬盘
+Spiking Point Mamba,2025,https://arxiv.org/abs/2504.14371,https://arxiv.org/pdf/2504.14371.pdf,arXiv 非独占许可,C,Notion 附件
+Spiking Point Transformer,2025,https://arxiv.org/abs/2502.15811,https://arxiv.org/pdf/2502.15811.pdf,arXiv 非独占许可,C,Notion 附件
+Bhattacharjee 等：SATA 与 SpikeSim 硬件评测,2024,https://arxiv.org/abs/2309.03388,https://arxiv.org/pdf/2309.03388.pdf,arXiv 非独占许可,C,Notion 附件
+BlockGCN,2024,https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_BlockGCN_Redefine_Topology_Awareness_for_Skeleton-Based_Action_Recognition_CVPR_2024_paper.html,https://openaccess.thecvf.com/content/CVPR2024/papers/Zhou_BlockGCN_Redefine_Topology_Awareness_for_Skeleton-Based_Action_Recognition_CVPR_2024_paper.pdf,出版社版权,C,Notion 附件
+DRA,2024,https://doi.org/10.1109/NorCAS64408.2024.10752486,需机构访问,出版社版权,C,仅官方链接
+DRSGNN,2024,https://doi.org/10.1609/aaai.v38i15.29640,需机构访问,出版社版权,C,仅官方链接
+Dy-SIGN,2024,https://arxiv.org/abs/2401.05373,https://arxiv.org/pdf/2401.05373.pdf,CC BY 4.0,C,Notion 附件
+Loihi Transductive SGNN,2024,https://arxiv.org/abs/2404.17048,https://arxiv.org/pdf/2404.17048.pdf,CC BY 4.0,C,Notion 附件
+MSG,2024,https://arxiv.org/abs/2410.17941,https://arxiv.org/pdf/2410.17941.pdf,CC BY-NC-SA 4.0,C,Notion 附件
+MobileViGv2,2024,https://arxiv.org/abs/2406.05850,https://arxiv.org/pdf/2406.05850.pdf,arXiv 非独占许可,C,Notion 附件
+P2SResLNet,2024,https://doi.org/10.1609/aaai.v38i6.28425,需机构访问,出版社版权,C,仅官方链接
+Point Transformer V3 / PTv3,2024,https://arxiv.org/abs/2312.10035,https://arxiv.org/pdf/2312.10035.pdf,arXiv 非独占许可,C,Notion 附件
+SpiNNaker 2,2024,https://arxiv.org/abs/2401.04491,https://arxiv.org/pdf/2401.04491.pdf,arXiv 非独占许可,C,Notion 附件
+SpikeGCL,2024,https://arxiv.org/abs/2305.19306,https://arxiv.org/pdf/2305.19306.pdf,arXiv 非独占许可,C,Notion 附件
+SpikePoint,2024,https://arxiv.org/abs/2310.07189,https://arxiv.org/pdf/2310.07189.pdf,arXiv 非独占许可,C,Google 云端硬盘
+SpikedAttention,2024,https://proceedings.neurips.cc/paper_files/paper/2024/hash/7c9341ad0263428b5057d92f4d88dfa0-Abstract-Conference.html,https://proceedings.neurips.cc/paper_files/paper/2024/file/7c9341ad0263428b5057d92f4d88dfa0-Paper-Conference.pdf,出版社版权,C,Notion 附件
+Dampfhoffer 等：硬件感知 SNN vs ANN 研究,2023,https://doi.org/10.1109/TETCI.2022.3233696,需机构访问,出版社版权,C,仅官方链接
+HD-GCN,2023,https://arxiv.org/abs/2208.10741,https://arxiv.org/pdf/2208.10741.pdf,arXiv 非独占许可,C,Notion 附件
+MST,2023,https://arxiv.org/abs/2210.01208,https://arxiv.org/pdf/2210.01208.pdf,arXiv 非独占许可,C,Google 云端硬盘
+MotionDeltaCNN,2023,https://arxiv.org/abs/2210.09887,https://arxiv.org/pdf/2210.09887.pdf,CC BY-NC-SA 4.0,C,Google 云端硬盘
+SENECA,2023,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1187252/full,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1187252/pdf,CC BY 4.0,C,Google 云端硬盘
+SpikeNet,2023,https://arxiv.org/abs/2208.10364,https://arxiv.org/pdf/2208.10364.pdf,arXiv 非独占许可,C,Notion 附件
+ViHGNN 与 Pyramid ViHGNN,2023,https://openaccess.thecvf.com/content/ICCV2023/html/Han_Vision_HGNN_An_Image_is_More_than_a_Graph_of_ICCV_2023_paper.html,https://openaccess.thecvf.com/content/ICCV2023/papers/Han_Vision_HGNN_An_Image_is_More_than_a_Graph_of_ICCV_2023_paper.pdf,出版社版权,C,Notion 附件
+DynaGraph,2022,https://doi.org/10.1145/3534540.3534691,需机构访问,出版社版权,C,仅官方链接
+InfoGCN,2022,https://openaccess.thecvf.com/content/CVPR2022/html/Chi_InfoGCN_Representation_Learning_for_Human_Skeleton-Based_Action_Recognition_CVPR_2022_paper.html,https://openaccess.thecvf.com/content/CVPR2022/papers/Chi_InfoGCN_Representation_Learning_for_Human_Skeleton-Based_Action_Recognition_CVPR_2022_paper.pdf,出版社版权,C,Google 云端硬盘
+InstantGNN,2022,https://arxiv.org/abs/2206.01379,https://arxiv.org/pdf/2206.01379.pdf,arXiv 非独占许可,C,Notion 附件
+SpiCalib 与 MLIPooling,2022,https://arxiv.org/abs/2207.02702,https://arxiv.org/pdf/2207.02702.pdf,arXiv 非独占许可,C,Notion 附件
+Davidson & Furber,2021,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.651141/full,https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.651141/pdf,CC BY 4.0,C,Notion 附件
+Degree-Quant,2021,https://arxiv.org/abs/2008.05000,https://arxiv.org/pdf/2008.05000.pdf,arXiv 非独占许可,C,Notion 附件
+GC-SNN 与 GA-SNN,2021,https://arxiv.org/abs/2107.06865,https://arxiv.org/pdf/2107.06865.pdf,arXiv 非独占许可,C,Notion 附件
+Ingress,2021,https://vldb.org/pvldb/vol14/p1613-gong.pdf,https://vldb.org/pvldb/vol14/p1613-gong.pdf,CC BY-NC-ND 4.0,C,Notion 附件
+Loihi 2,2021,https://arxiv.org/abs/2111.03746,https://arxiv.org/pdf/2111.03746.pdf,arXiv 非独占许可,C,Notion 附件
+Point Transformer / PTv1,2021,https://arxiv.org/abs/2012.09164,https://arxiv.org/pdf/2012.09164.pdf,arXiv 非独占许可,C,Google 云端硬盘
+RTS / Optimal Conversion,2021,https://arxiv.org/abs/2103.00476,https://arxiv.org/pdf/2103.00476.pdf,arXiv 非独占许可,C,Notion 附件
+Skip-Conv,2021,https://arxiv.org/abs/2104.11487,https://arxiv.org/pdf/2104.11487.pdf,CC BY 4.0,C,Notion 附件
+CBinfer 期刊版,2020,https://arxiv.org/abs/1808.05488,https://arxiv.org/pdf/1808.05488.pdf,arXiv 非独占许可,C,Notion 附件
+SGQuant,2020,https://arxiv.org/abs/2007.05100,https://arxiv.org/pdf/2007.05100.pdf,arXiv 非独占许可,C,Notion 附件
+Spiking-YOLO,2020,https://arxiv.org/abs/1903.06530,https://arxiv.org/pdf/1903.06530.pdf,arXiv 非独占许可,C,Google 云端硬盘
+TactileSGNet,2020,https://arxiv.org/abs/2008.08046,https://arxiv.org/pdf/2008.08046.pdf,arXiv 非独占许可,C,Notion 附件
+2s-AGCN,2019,https://arxiv.org/abs/1805.07694,https://arxiv.org/pdf/1805.07694.pdf,arXiv 非独占许可,C,Notion 附件
+RG-CNNs,2019,https://arxiv.org/abs/1908.06648,https://arxiv.org/pdf/1908.06648.pdf,arXiv 非独占许可,C,Notion 附件
+Tianjic,2019,https://doi.org/10.1038/s41586-019-1424-8,需机构访问,出版社版权,C,仅官方链接
+CBinfer 会议版,2017,https://arxiv.org/abs/1704.04313,https://arxiv.org/pdf/1704.04313.pdf,arXiv 非独占许可,C,Notion 附件
+Delta 网络,2017,https://arxiv.org/abs/1612.05571,https://arxiv.org/pdf/1612.05571.pdf,arXiv 非独占许可,C,Notion 附件
