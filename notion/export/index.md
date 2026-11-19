@@ -1,6 +1,6 @@
 # 🐱 视觉图网络免训练转脉冲网络：通俗讲解
 
-> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-18T14:59:22.011Z`）
+> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-19T08:49:37.614Z`）
 
 <callout icon="📌" color="blue_bg">
 这份讲解写给项目所有者：用一张猫的照片贯穿全篇，说明“把训练好的视觉图神经网络，不重新训练就变成省电的脉冲网络”这个方向在做什么、别人做到了哪一步、还空着什么。所有事实都来自仓库 <code>literature/</code> 下已核实的条目（任务 01，PR #1 已合并）。
@@ -96,7 +96,7 @@
 
 ## 从零推导：第一性原理数学主线（任务 04 扩展，分批更新中）
 
-上面 <code>0</code>～<code>11</code> 页是面向快速建立全局视野的通俗讲解；下面新增<b>“从零推导”数学主线</b>（共 13 章，当前已上线《符号表》、《常见困惑》与《第 1～7 章》），一步不跳地写出矩阵形状、公式推导、小数字手算与可运行 Notebook 验证（配套代码见仓库 [<code>notion/notebooks/</code>](https://github.com/Casey-sketch-cyber/gnn2gsnn/tree/main/notion/notebooks)）；同时所有论文引用均已补齐 <code>[原文] [中文] [代码]</code> 一键直达链接，文献库内可直接翻阅原文 PDF（86 篇 Notion 附件 + 17 篇受限 Google 云端硬盘嵌入）。
+上面 <code>0</code>～<code>11</code> 页是面向快速建立全局视野的通俗讲解；下面新增<b>“从零推导”数学主线</b>（共 13 章，当前已上线《符号表》、《常见困惑》与《第 1～10 章》），一步不跳地写出矩阵形状、公式推导、小数字手算与可运行 Notebook 验证（配套代码见仓库 [<code>notion/notebooks/</code>](https://github.com/Casey-sketch-cyber/gnn2gsnn/tree/main/notion/notebooks)）；同时所有论文引用均已补齐 <code>[原文] [中文] [代码]</code> 一键直达链接，文献库内可直接翻阅原文 PDF（86 篇 Notion 附件 + 17 篇受限 Google 云端硬盘嵌入）。
 
 <page url="https://app.notion.com/p/41c0e3342e6f81b58fb2e4fd6fdbc8c7">
 符号表（全课程统一记号）
@@ -132,4 +132,18 @@
 
 <page url="https://app.notion.com/p/41c0e3342e6f819b94c7f590cf469e44">
 第 7 章 核心：为什么发放率约等于 ReLU
+</page>
+
+<p />
+
+<page url="https://app.notion.com/p/41d0e3342e6f81a88e0cee5577f5e2c3">
+第 8 章 带符号、多阈值和差分编码
+</page>
+
+<page url="https://app.notion.com/p/41d0e3342e6f815698f9db048cdba5d9">
+第 9 章 非线性运算为什么难转换
+</page>
+
+<page url="https://app.notion.com/p/41d0e3342e6f81139bdec1e4296f2664">
+第 10 章 近似误差会不会让选邻居出错
 </page>

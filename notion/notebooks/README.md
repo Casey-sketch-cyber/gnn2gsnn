@@ -16,7 +16,7 @@ python -m venv .venv
 
 也可以直接点击每个 Notebook 顶部的 **Open in Colab** 徽章在浏览器中零配置运行。
 
-## 章节对应清单（当前进度：第 2 批，第 1～7 章）
+## 章节对应清单（当前进度：第 3 批，第 1～10 章）
 
 | 章节 | Notebook 文件 | 核心验证内容 | Colab 直达 |
 | --- | --- | --- | --- |
@@ -27,3 +27,6 @@ python -m venv .venv
 | 第 5 章 视觉图网络 | [`ch05_vision_gnn.ipynb`](ch05_vision_gnn.ipynb) | 图像切块矩阵乘与步幅卷积恒等性；两两平方距离矩阵公式 $D=\mathbf{q}\mathbf{1}^\top+\mathbf{1}\mathbf{q}^\top-2XX^\top$；ViG `max-relative` 有符号差值手算复现与 DGCNN / MobileViG / ST-GCN 对照 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch05_vision_gnn.ipynb) |
 | 第 6 章 脉冲神经元 | [`ch06_spiking_neurons.ipynb`](ch06_spiking_neurons.ipynb) | 置零复位 vs 减法复位两张 10 步对照表；$z=0.3,\theta=1,T=10$ 核心手算表（验收标准第 2 条）及 Python `float64` 第 10 步 `0.9999999999999998` 漏脉冲现象与 `1e-9` 容差修正；IF vs LIF 死区演示 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch06_spiking_neurons.ipynb) |
 | 第 7 章 核心：为什么发放率约等于 ReLU | [`ch07_ann2snn_rate_and_errors.ipynb`](ch07_ann2snn_rate_and_errors.ipynb) | 裂项求和恒等式验证；$v[0]=\theta/2$ 半阈值修正与 QCFS 定理 1–2 验证；线性复制权重原理与 `max`/乘法反例（验收标准第 4 条）；截断/量化/到达不均匀三种误差手算核对（验收标准第 3 条）；99.9% 分位数阈值与权重缩放等价性；两层网络 $T=4,8,16,32$ 端到端并排对照 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch07_ann2snn_rate_and_errors.ipynb) |
+| 第 8 章 带符号、多阈值和差分编码 | [`ch08_signed_multithreshold_diff.ipynb`](ch08_signed_multithreshold_diff.ipynb) | 带符号 IF 撤回误发脉冲与编码负激活；DCGS $2n$ 级多阈值（Eq. 1–6 / Appendix P 位运算）与差分编码全套方程（Definition 4.1 & Theorems 4.2–4.5，含核出原文式 19 笔误）手算复现；复现 DCGS 图 2 及 $T=1\sim 32$ 误差/脉冲数基准（验收标准第 7 条 DCGS 部分） | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch08_signed_multithreshold_diff.ipynb) |
+| 第 9 章 非线性运算为什么难转换 | [`ch09_nonlinear_operators.ipynb`](ch09_nonlinear_operators.ipynb) | 逐步 `max` 反例（`1010` vs `0101`）与均匀噪声最大化正偏置 $\frac{k-1}{k+1}\epsilon$ 仿真；Bu 等 Theorem 2 交换律验证、SNN 时域条件反例及 ViG 失效算例；双脉冲流乘法错相/同相反例与增量乘积恒等式；GELU / Softmax / LayerNorm 非交换性反例 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch09_nonlinear_operators.ipynb) |
+| 第 10 章 近似误差会不会让选邻居出错 | [`ch10_knn_stability.ipynb`](ch10_knn_stability.ipynb) | 三角不等式 $2\varepsilon$ 距离扰动界与取等验证；$4\varepsilon$ 邻居不变定理手算与翻转演示（验收标准第 5 条，附紧界构造）；$\varepsilon(T)$ 换算到向量范数并在 $N=49, C=32, k=9$ 模拟视觉图上实测 IF / 半阈值 IF / DCGS 的 $k$-NN 边翻转率曲线 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch10_knn_stability.ipynb) |

@@ -1,6 +1,6 @@
 # Notion 通俗讲解与第一性原理推导（任务 02 + 任务 04 交付物）
 
-本目录同步了在 Notion 上为项目所有者制作的《视觉图网络免训练转脉冲网络》全部通俗讲解页（任务 02）与第一性原理数学推导主线、配套可运行 Notebook（任务 04，分七批更新，当前已上线**第 1～2 批**）。所有事实均严格来自仓库 `literature/` 下已核实的条目，来自论文的公式均与原文逐字符核对，自推导补全步骤均标明“推导（非论文原文）”并经 Notebook 数值验证。
+本目录同步了在 Notion 上为项目所有者制作的《视觉图网络免训练转脉冲网络》全部通俗讲解页（任务 02）与第一性原理数学推导主线、配套可运行 Notebook（任务 04，分七批更新，当前已上线**第 1～3 批**）。所有事实均严格来自仓库 `literature/` 下已核实的条目，来自论文的公式均与原文逐字符核对，自推导补全步骤均标明“推导（非论文原文）”并经 Notebook 数值验证。
 
 ## Notion 在线访问方式
 
@@ -30,7 +30,7 @@
 | 10 | 术语表 | https://www.notion.so/41b0e3342e6f811e8e69f0040d257997 | [`export/10-术语表.md`](export/10-术语表.md) | — |
 | 11 | 文献库（118 篇数据库，含 103 篇内嵌 PDF 与中文全文子页面） | https://www.notion.so/41b0e3342e6f814a98b5c85f2ded4083 （数据库：https://www.notion.so/41b0e3342e6f815fbac2e645330b5177 ） | [`export/11-文献库.md`](export/11-文献库.md) | — |
 
-### 二、从零推导：第一性原理数学主线与辅助页（任务 04，第 1～2 批已上线）
+### 二、从零推导：第一性原理数学主线与辅助页（任务 04，第 1～3 批已上线）
 
 | 章节 / 页面 | Notion 链接 | 仓库导出文件 | 配套可运行 Notebook |
 | --- | --- | --- | --- |
@@ -43,12 +43,15 @@
 | 5️⃣ 第 5 章 视觉图网络 | https://www.notion.so/41c0e3342e6f812880f5c7086f9d9b61 | [`export/derivations/ch05-视觉图网络.md`](export/derivations/ch05-视觉图网络.md) | [`notebooks/ch05_vision_gnn.ipynb`](notebooks/ch05_vision_gnn.ipynb) |
 | 6️⃣ 第 6 章 脉冲神经元 | https://www.notion.so/41c0e3342e6f817094a3d6783a3721a1 | [`export/derivations/ch06-脉冲神经元.md`](export/derivations/ch06-脉冲神经元.md) | [`notebooks/ch06_spiking_neurons.ipynb`](notebooks/ch06_spiking_neurons.ipynb) |
 | 7️⃣ 第 7 章 核心：为什么发放率约等于 ReLU | https://www.notion.so/41c0e3342e6f819b94c7f590cf469e44 | [`export/derivations/ch07-核心-为什么发放率约等于ReLU.md`](export/derivations/ch07-核心-为什么发放率约等于ReLU.md) | [`notebooks/ch07_ann2snn_rate_and_errors.ipynb`](notebooks/ch07_ann2snn_rate_and_errors.ipynb) |
+| 8️⃣ 第 8 章 带符号、多阈值和差分编码 | https://www.notion.so/41d0e3342e6f81a88e0cee5577f5e2c3 | [`export/derivations/ch08-带符号-多阈值和差分编码.md`](export/derivations/ch08-带符号-多阈值和差分编码.md) | [`notebooks/ch08_signed_multithreshold_diff.ipynb`](notebooks/ch08_signed_multithreshold_diff.ipynb) |
+| 9️⃣ 第 9 章 非线性运算为什么难转换 | https://www.notion.so/41d0e3342e6f815698f9db048cdba5d9 | [`export/derivations/ch09-非线性运算为什么难转换.md`](export/derivations/ch09-非线性运算为什么难转换.md) | [`notebooks/ch09_nonlinear_operators.ipynb`](notebooks/ch09_nonlinear_operators.ipynb) |
+| 🔟 第 10 章 近似误差会不会让选邻居出错 | https://www.notion.so/41d0e3342e6f81139bdec1e4296f2664 | [`export/derivations/ch10-近似误差会不会让选邻居出错.md`](export/derivations/ch10-近似误差会不会让选邻居出错.md) | [`notebooks/ch10_knn_stability.ipynb`](notebooks/ch10_knn_stability.ipynb) |
 
 ## 目录文件说明
 
 - [`README.md`](README.md)：本说明文件。
-- [`export/`](export/)：从 Notion 实时抓取导出的总页面、`0`～`11` 通俗页、`符号表.md`、`常见困惑.md` 及 [`export/derivations/`](export/derivations/) 下的第 1～7 章推导 Markdown（共 22 个文件）。
-- [`notebooks/`](notebooks/)：仅用 Python 3.10+、NumPy、Matplotlib 编写并完整运行保留输出的第 1～7 章配套 Notebook 及环境说明 [`notebooks/README.md`](notebooks/README.md)。
+- [`export/`](export/)：从 Notion 实时抓取导出的总页面、`0`～`11` 通俗页、`符号表.md`、`常见困惑.md` 及 [`export/derivations/`](export/derivations/) 下的第 1～10 章推导 Markdown（共 25 个文件）。
+- [`notebooks/`](notebooks/)：仅用 Python 3.10+、NumPy、Matplotlib 编写并完整运行保留输出的第 1～10 章配套 Notebook 及环境说明 [`notebooks/README.md`](notebooks/README.md)。
 - [`figures/`](figures/)：9 张自制图表的全部源码（4 个 `.mmd` Mermaid 文件、5 个 `.svg` 静态矢量图、4 个带暂停与滑块的 `.html` 交互页，共 13 个文件）。
 - [`figure-sources.md`](figure-sources.md)：每张图的来源、所在页、制作方式与示意图数据说明。
 - [`gaps.md`](gaps.md)：制作讲解时发现 `literature/` 中缺少独立条目或尚待实验测量的内容记录。
