@@ -1,6 +1,6 @@
 # 9 Claude 的判断哪里对、哪里错
 
-> Notion 页面：https://www.notion.so/41b0e3342e6f81cba505e4f774ccf728 （导出自 Notion 实时内容，最后编辑时间 `2026-11-18T10:37:33.819Z`）
+> Notion 页面：https://www.notion.so/41b0e3342e6f81cba505e4f774ccf728 （导出自 Notion 实时内容，最后编辑时间 `2026-11-21T03:01:18.982Z`）
 
 <callout icon="📌" color="blue_bg">
 <b>一句话结论</b>：Claude 草稿的 72 处论断里，43 处正确、18 处不准确、4 处错误、7 处无法核实；错的集中在“图网络从没被转换过”“最大值聚合不再是空白”“Spiking PointCNN 是转换”这几处，方向判断（动态选邻居是空白）站得住。
@@ -49,6 +49,8 @@
 <callout icon="✅" color="green_bg">
 <b>事实</b>：Claude 审查任务 01 时，独立核对了 7 篇论文和 3 个代码仓库，全部与记录吻合，并修了三处小问题：MobileViG 的差值方向是“自身减邻居”、实现用切片拼接；PMSM 条目对应的是 arXiv 后续版本；One-Spike SNN 的“唯一”改为“本次检索范围内唯一”（见 [docs/PROGRESS.md](https://github.com/Casey-sketch-cyber/gnn2gsnn/blob/main/docs/PROGRESS.md) 2026-11-17 记录）。
 </callout>
+
+👉 <b>想看推导</b>：涉及最大值聚合与 Bu 等定理的数学核对见 <mention url="https://app.notion.com/p/41d0e3342e6f815698f9db048cdba5d9">第 9 章 非线性运算为什么难转换</mention>；动态 $k$-NN 翻转理论见 <mention url="https://app.notion.com/p/41d0e3342e6f81139bdec1e4296f2664">第 10 章 近似误差会不会让选邻居出错</mention>；多跳扩散与公平能耗对比见 <mention url="https://app.notion.com/p/41f0e3342e6f8135b55eda085c440a75">第 11 章 只算变化的部分</mention> 与 <mention url="https://app.notion.com/p/41f0e3342e6f81a6ac0bcac80292afa4">第 12 章 省电到底怎么算</mention>。
 
 <b>三句话小结</b>
 

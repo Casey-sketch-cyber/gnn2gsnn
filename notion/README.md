@@ -1,6 +1,6 @@
 # Notion 通俗讲解与第一性原理推导（任务 02 + 任务 04 交付物）
 
-本目录同步了在 Notion 上为项目所有者制作的《视觉图网络免训练转脉冲网络》全部通俗讲解页（任务 02）与第一性原理数学推导主线、配套可运行 Notebook（任务 04，分七批更新，当前已上线**第 1～3 批**）。所有事实均严格来自仓库 `literature/` 下已核实的条目，来自论文的公式均与原文逐字符核对，自推导补全步骤均标明“推导（非论文原文）”并经 Notebook 数值验证。
+本目录同步了在 Notion 上为项目所有者制作的《视觉图网络免训练转脉冲网络》全部通俗讲解页（任务 02，全页已补齐“想看推导：第 N 章”双向互链）与第一性原理数学推导主线、配套可运行 Notebook（任务 04，分七批更新，当前已完成**第 1～4 批：全 13 章推导主线、13 个 Notebook 与四张工具页全部上线**）。所有事实均严格来自仓库 `literature/` 下已核实的条目，来自论文的公式均与原文逐字符核对，自推导补全步骤均标明“推导（非论文原文）”并经 Notebook 数值验证。
 
 ## Notion 在线访问方式
 
@@ -30,12 +30,14 @@
 | 10 | 术语表 | https://www.notion.so/41b0e3342e6f811e8e69f0040d257997 | [`export/10-术语表.md`](export/10-术语表.md) | — |
 | 11 | 文献库（118 篇数据库，含 103 篇内嵌 PDF 与中文全文子页面） | https://www.notion.so/41b0e3342e6f814a98b5c85f2ded4083 （数据库：https://www.notion.so/41b0e3342e6f815fbac2e645330b5177 ） | [`export/11-文献库.md`](export/11-文献库.md) | — |
 
-### 二、从零推导：第一性原理数学主线与辅助页（任务 04，第 1～3 批已上线）
+### 二、从零推导：第一性原理数学主线与辅助页（任务 04，全 13 章及四张工具页已全部上线）
 
 | 章节 / 页面 | Notion 链接 | 仓库导出文件 | 配套可运行 Notebook |
 | --- | --- | --- | --- |
+| 🗺️ 学习路线（从零推导到独立选题） | https://www.notion.so/41f0e3342e6f81d6b020dd784060f201 | [`export/学习路线.md`](export/学习路线.md) | — |
 | 📐 符号表（全课程统一记号） | https://www.notion.so/41c0e3342e6f81b58fb2e4fd6fdbc8c7 | [`export/符号表.md`](export/符号表.md) | — |
 | ❓ 常见困惑（从“数值转脉冲到底是什么意思”说起） | https://www.notion.so/41c0e3342e6f81c59bf4c3adada2973d | [`export/常见困惑.md`](export/常见困惑.md) | — |
+| 📝 自测题汇总（按七条验收标准分组） | https://www.notion.so/41f0e3342e6f81ee8058d1c6a171f551 | [`export/自测题汇总.md`](export/自测题汇总.md) | — |
 | 1️⃣ 第 1 章 线性代数最小集 | https://www.notion.so/41c0e3342e6f8102aeb4d13255acb166 | [`export/derivations/ch01-线性代数最小集.md`](export/derivations/ch01-线性代数最小集.md) | [`notebooks/ch01_linear_algebra.ipynb`](notebooks/ch01_linear_algebra.ipynb) |
 | 2️⃣ 第 2 章 神经网络的前向计算 | https://www.notion.so/41c0e3342e6f8156afa8d6260fe476ce | [`export/derivations/ch02-神经网络的前向计算.md`](export/derivations/ch02-神经网络的前向计算.md) | [`notebooks/ch02_nn_forward_and_bn_folding.ipynb`](notebooks/ch02_nn_forward_and_bn_folding.ipynb) |
 | 3️⃣ 第 3 章 训练：反向传播与脉冲困境 | https://www.notion.so/41c0e3342e6f816db904cb868ade3e5c | [`export/derivations/ch03-训练-反向传播与脉冲困境.md`](export/derivations/ch03-训练-反向传播与脉冲困境.md) | [`notebooks/ch03_backprop_and_step_derivative.ipynb`](notebooks/ch03_backprop_and_step_derivative.ipynb) |
@@ -46,12 +48,15 @@
 | 8️⃣ 第 8 章 带符号、多阈值和差分编码 | https://www.notion.so/41d0e3342e6f81a88e0cee5577f5e2c3 | [`export/derivations/ch08-带符号-多阈值和差分编码.md`](export/derivations/ch08-带符号-多阈值和差分编码.md) | [`notebooks/ch08_signed_multithreshold_diff.ipynb`](notebooks/ch08_signed_multithreshold_diff.ipynb) |
 | 9️⃣ 第 9 章 非线性运算为什么难转换 | https://www.notion.so/41d0e3342e6f815698f9db048cdba5d9 | [`export/derivations/ch09-非线性运算为什么难转换.md`](export/derivations/ch09-非线性运算为什么难转换.md) | [`notebooks/ch09_nonlinear_operators.ipynb`](notebooks/ch09_nonlinear_operators.ipynb) |
 | 🔟 第 10 章 近似误差会不会让选邻居出错 | https://www.notion.so/41d0e3342e6f81139bdec1e4296f2664 | [`export/derivations/ch10-近似误差会不会让选邻居出错.md`](export/derivations/ch10-近似误差会不会让选邻居出错.md) | [`notebooks/ch10_knn_stability.ipynb`](notebooks/ch10_knn_stability.ipynb) |
+| ⚡ 第 11 章 只算变化的部分 | https://www.notion.so/41f0e3342e6f8135b55eda085c440a75 | [`export/derivations/ch11-只算变化的部分.md`](export/derivations/ch11-只算变化的部分.md) | [`notebooks/ch11_delta_and_sparse_updates.ipynb`](notebooks/ch11_delta_and_sparse_updates.ipynb) |
+| 🔋 第 12 章 省电到底怎么算 | https://www.notion.so/41f0e3342e6f81a6ac0bcac80292afa4 | [`export/derivations/ch12-省电到底怎么算.md`](export/derivations/ch12-省电到底怎么算.md) | [`notebooks/ch12_energy_and_quantization.ipynb`](notebooks/ch12_energy_and_quantization.ipynb) |
+| 🧩 第 13 章 把全部串起来 | https://www.notion.so/41f0e3342e6f811f8627cecfb1e9ac01 | [`export/derivations/ch13-把全部串起来.md`](export/derivations/ch13-把全部串起来.md) | [`notebooks/ch13_end_to_end_gnn2gsnn.ipynb`](notebooks/ch13_end_to_end_gnn2gsnn.ipynb) |
 
 ## 目录文件说明
 
 - [`README.md`](README.md)：本说明文件。
-- [`export/`](export/)：从 Notion 实时抓取导出的总页面、`0`～`11` 通俗页、`符号表.md`、`常见困惑.md` 及 [`export/derivations/`](export/derivations/) 下的第 1～10 章推导 Markdown（共 25 个文件）。
-- [`notebooks/`](notebooks/)：仅用 Python 3.10+、NumPy、Matplotlib 编写并完整运行保留输出的第 1～10 章配套 Notebook 及环境说明 [`notebooks/README.md`](notebooks/README.md)。
+- [`export/`](export/)：从 Notion 实时抓取导出的总页面、`0`～`11` 通俗页、`学习路线.md`、`符号表.md`、`常见困惑.md`、`自测题汇总.md` 及 [`export/derivations/`](export/derivations/) 下的第 1～13 章推导 Markdown（共 30 个文件）。
+- [`notebooks/`](notebooks/)：仅用 Python 3.10+、NumPy、Matplotlib 编写并完整运行保留输出的全 13 章配套 Notebook 及环境说明 [`notebooks/README.md`](notebooks/README.md)。
 - [`figures/`](figures/)：9 张自制图表的全部源码（4 个 `.mmd` Mermaid 文件、5 个 `.svg` 静态矢量图、4 个带暂停与滑块的 `.html` 交互页，共 13 个文件）。
 - [`figure-sources.md`](figure-sources.md)：每张图的来源、所在页、制作方式与示意图数据说明。
 - [`gaps.md`](gaps.md)：制作讲解时发现 `literature/` 中缺少独立条目或尚待实验测量的内容记录。

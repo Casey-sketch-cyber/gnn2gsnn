@@ -1,6 +1,6 @@
 # 🐱 视觉图网络免训练转脉冲网络：通俗讲解
 
-> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-19T08:49:37.614Z`）
+> Notion 页面：https://www.notion.so/41b0e3342e6f818f86b9d9a6cbc71968 （导出自 Notion 实时内容，最后编辑时间 `2026-11-21T03:03:06.259Z`）
 
 <callout icon="📌" color="blue_bg">
 这份讲解写给项目所有者：用一张猫的照片贯穿全篇，说明“把训练好的视觉图神经网络，不重新训练就变成省电的脉冲网络”这个方向在做什么、别人做到了哪一步、还空着什么。所有事实都来自仓库 <code>literature/</code> 下已核实的条目（任务 01，PR #1 已合并）。
@@ -11,6 +11,14 @@
 - 先读“0 一页读懂”和“1 基础概念”，再按需要看后面的页面。
 - 每页开头一句话说结论，结尾有“三句话小结”和“读完应该能回答的两个问题”。
 - 每条事实后面的链接指向“11 文献库”里的对应论文。
+
+## 怎么用这份资料（通俗页与推导页的配合）
+
+整套 Notion 分为<b>上下两套互补材料</b>，按你的当前目标自由切换：
+
+- <b>上半部：通俗讲解组（</b><b><code>0</code></b><b>～</b><b><code>11</code></b><b> 页）</b>——面向“快速建立全局地图与选题判断”。每页围绕一张猫的照片讲直觉、讲脉络、讲别人做到了哪一步、还空着什么；相关段落末尾均附有<b>“想看推导：第 N 章”</b>一键跳转链接。
+- <b>下半部：从零推导数学主线（第 1～13 章 + 四张工具页）</b>——面向“彻底看懂底层数学、亲手跑代码、逐公式读懂论文”。包含<mention url="https://app.notion.com/p/41f0e3342e6f81d6b020dd784060f201">学习路线（从零推导到独立选题）</mention>（含概念依赖图与快速/标准/深入三条路线）、<mention url="https://app.notion.com/p/41c0e3342e6f81b58fb2e4fd6fdbc8c7">符号表（全课程统一记号）</mention>、<mention url="https://app.notion.com/p/41c0e3342e6f81c59bf4c3adada2973d">常见困惑（从“数值转脉冲到底是什么意思”说起）</mention>、全 13 章不跳步推导与配套 Notebook，以及按七条验收标准组织的<mention url="https://app.notion.com/p/41f0e3342e6f81ee8058d1c6a171f551">自测题汇总（按七条验收标准分组）</mention>。
+- <b>建议用法</b>：先看<mention url="https://app.notion.com/p/41f0e3342e6f81d6b020dd784060f201">学习路线（从零推导到独立选题）</mention>挑一条轨道；读通俗页遇到“为什么会这样”就点文末的“想看推导”钻进对应章节；读论文原文遇到陌生字母先查<mention url="https://app.notion.com/p/41c0e3342e6f81b58fb2e4fd6fdbc8c7">符号表（全课程统一记号）</mention>；学完后用<mention url="https://app.notion.com/p/41f0e3342e6f81ee8058d1c6a171f551">自测题汇总（按七条验收标准分组）</mention>逐条检验。
 
 ## 三种标注块
 
@@ -94,9 +102,9 @@
 
 ---
 
-## 从零推导：第一性原理数学主线（任务 04 扩展，分批更新中）
+## 从零推导：第一性原理数学主线（任务 04 扩展，全 13 章已完成）
 
-上面 <code>0</code>～<code>11</code> 页是面向快速建立全局视野的通俗讲解；下面新增<b>“从零推导”数学主线</b>（共 13 章，当前已上线《符号表》、《常见困惑》与《第 1～10 章》），一步不跳地写出矩阵形状、公式推导、小数字手算与可运行 Notebook 验证（配套代码见仓库 [<code>notion/notebooks/</code>](https://github.com/Casey-sketch-cyber/gnn2gsnn/tree/main/notion/notebooks)）；同时所有论文引用均已补齐 <code>[原文] [中文] [代码]</code> 一键直达链接，文献库内可直接翻阅原文 PDF（86 篇 Notion 附件 + 17 篇受限 Google 云端硬盘嵌入）。
+上面 <code>0</code>～<code>11</code> 页是面向快速建立全局视野的通俗讲解；下面新增<b>“从零推导”数学主线</b>（全 13 章及《学习路线》、《符号表》、《常见困惑》、《自测题汇总》均已上线），一步不跳地写出矩阵形状、公式推导、小数字手算与可运行 Notebook 验证（全 13 个配套代码见仓库 [<code>notion/notebooks/</code>](https://github.com/Casey-sketch-cyber/gnn2gsnn/tree/main/notion/notebooks)）；同时所有论文引用均已补齐 <code>[原文] [中文] [代码]</code> 一键直达链接，文献库内可直接翻阅原文 PDF（86 篇 Notion 附件 + 17 篇受限 Google 云端硬盘嵌入）。
 
 <page url="https://app.notion.com/p/41c0e3342e6f81b58fb2e4fd6fdbc8c7">
 符号表（全课程统一记号）
@@ -146,4 +154,24 @@
 
 <page url="https://app.notion.com/p/41d0e3342e6f81139bdec1e4296f2664">
 第 10 章 近似误差会不会让选邻居出错
+</page>
+
+<page url="https://app.notion.com/p/41f0e3342e6f8135b55eda085c440a75">
+第 11 章 只算变化的部分
+</page>
+
+<page url="https://app.notion.com/p/41f0e3342e6f81a6ac0bcac80292afa4">
+第 12 章 省电到底怎么算
+</page>
+
+<page url="https://app.notion.com/p/41f0e3342e6f811f8627cecfb1e9ac01">
+第 13 章 把全部串起来
+</page>
+
+<page url="https://app.notion.com/p/41f0e3342e6f81d6b020dd784060f201">
+学习路线（从零推导到独立选题）
+</page>
+
+<page url="https://app.notion.com/p/41f0e3342e6f81ee8058d1c6a171f551">
+自测题汇总（按七条验收标准分组）
 </page>
