@@ -16,7 +16,7 @@ python -m venv .venv
 
 也可以直接点击每个 Notebook 顶部的 **Open in Colab** 徽章在浏览器中零配置运行。
 
-## 章节对应清单（当前进度：第 3 批，第 1～10 章）
+## 章节对应清单（当前进度：第 4 批，全 13 章已完成）
 
 | 章节 | Notebook 文件 | 核心验证内容 | Colab 直达 |
 | --- | --- | --- | --- |
@@ -30,3 +30,6 @@ python -m venv .venv
 | 第 8 章 带符号、多阈值和差分编码 | [`ch08_signed_multithreshold_diff.ipynb`](ch08_signed_multithreshold_diff.ipynb) | 带符号 IF 撤回误发脉冲与编码负激活；DCGS $2n$ 级多阈值（Eq. 1–6 / Appendix P 位运算）与差分编码全套方程（Definition 4.1 & Theorems 4.2–4.5，含核出原文式 19 笔误）手算复现；复现 DCGS 图 2 及 $T=1\sim 32$ 误差/脉冲数基准（验收标准第 7 条 DCGS 部分） | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch08_signed_multithreshold_diff.ipynb) |
 | 第 9 章 非线性运算为什么难转换 | [`ch09_nonlinear_operators.ipynb`](ch09_nonlinear_operators.ipynb) | 逐步 `max` 反例（`1010` vs `0101`）与均匀噪声最大化正偏置 $\frac{k-1}{k+1}\epsilon$ 仿真；Bu 等 Theorem 2 交换律验证、SNN 时域条件反例及 ViG 失效算例；双脉冲流乘法错相/同相反例与增量乘积恒等式；GELU / Softmax / LayerNorm 非交换性反例 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch09_nonlinear_operators.ipynb) |
 | 第 10 章 近似误差会不会让选邻居出错 | [`ch10_knn_stability.ipynb`](ch10_knn_stability.ipynb) | 三角不等式 $2\varepsilon$ 距离扰动界与取等验证；$4\varepsilon$ 邻居不变定理手算与翻转演示（验收标准第 5 条，附紧界构造）；$\varepsilon(T)$ 换算到向量范数并在 $N=49, C=32, k=9$ 模拟视觉图上实测 IF / 半阈值 IF / DCGS 的 $k$-NN 边翻转率曲线 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch10_knn_stability.ipynb) |
+| 第 11 章 只算变化的部分 | [`ch11_delta_and_sparse_updates.ipynb`](ch11_delta_and_sparse_updates.ipynb) | 线性增量穿透与 ReLU 非线性状态缓存反例；缓慢爬坡信号上朴素截断（无限漂移）vs DeltaCNN 截断误差缓冲（误差 $< \Theta$）vs Sigma-Delta Herding（等价取整网络，误差 $\le \Theta/2$）逐帧对照；多层截断误差递推上界；5 节点链状图 $k$ 跳扩散与阈值截断压制实验 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch11_delta_and_sparse_updates.ipynb) |
+| 第 12 章 省电到底怎么算 | [`ch12_energy_and_quantization.ipynb`](ch12_energy_and_quantization.ipynb) | Horowitz (2014) 45nm 原始运算与访存表及 FP32 / INT8 盈亏线；3 层网络（`64→128→64→10`）给定脉冲数与扇出的能耗估算与 8KB SRAM 访存反转手算验证（验收标准第 6 条）；Yan 等（IEEE TCAD 2026）QNN-SNN Twin 解析模型与 22nm 盈亏曲线复现 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch12_energy_and_quantization.ipynb) |
+| 第 13 章 把全部串起来 | [`ch13_end_to_end_gnn2gsnn.ipynb`](ch13_end_to_end_gnn2gsnn.ipynb) | 4 节点 2 层固定图 GCN 免训练转脉冲（$T=4,8,16,32$ 输出误差、一致率与能耗比全对照）；替换为动态 $k$-NN（$k=2$）+ `max-relative` 视觉图块后，对比 IF 逐拍 `max`、IF 还原率与 DCGS（$n=4$）的邻居翻转与输出误差，直连本项目研究问题 | [Open in Colab](https://colab.research.google.com/github/Casey-sketch-cyber/gnn2gsnn/blob/main/notion/notebooks/ch13_end_to_end_gnn2gsnn.ipynb) |
